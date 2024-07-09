@@ -1,26 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maheshwari Kota Stone</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        .trapezium {
+            clip-path: polygon(5% 100%, 100% 100%, 100% 0, 0 0);
+            padding-left: 10px;
+        }
+    </style>
 </head>
+
 <body>
-    <!-- Header -->
-     <div class="flex py-4" style="background-color: aqua;">
-        <div class="flex w-3/5 grid grid-cols-12 gap-4" style="background-color: aquamarine;">
-            <div class="flex col-span-2 bg-white" style="width: 40px; height: 40px;"></div>
-            <div class="col-span-10 text-xl">
-                <h1>Maheshwari Kota Stone</h1>
+    <!-- NavBar + NavMenu (fixed) -->
+    <div class="nav flex flex-col w-screen fixed">
+        <!-- NavBar -->
+        <nav class="flex bg-DarkBlue py-4 justify-between px-10 items-center">
+            <div class="flex w-2/5 justify-between items-center">
+                <div class="logo">
+                    <img src="" alt="error">
+                </div>
+                <div class="name text-white text-4xl">Maheshwari Kota Stone</div>
             </div>
-        </div>
-        <div class="flex w-2/5" style="background-color: blanchedalmond; justify-content: flex-end;">
-            <div class="flex grow-0 grid grid-cols-6 px-4" style="border: 1px solid;">
-                <div class="flex bg-white col-start-2 col-end-3 mx-1" style="width: 40px; height: 40px;"></div>
-                <div class="flex bg-white col-start-4 col-end-5 mx-1" style="width: 40px; height: 40px;"></div>
-                <div class="flex bg-white col-start-6 col-end-7 mx-1" style="width: 40px; height: 40px;"></div>
+            <div class="flex gap-8">
+                <div class="phone">
+                    <img src="assets/telephone.svg" alt="">
+                </div>
+                <div class="mail flex relative bottom-0.5">
+                    <img src="assets/envelope.svg" alt="">
+                </div>
+                <div>
+                    <img src="assets/instagram.svg" alt="">
+                </div>
             </div>
+        </nav>
+
+        <hr class="w-5/12 border-t border-white self-end">
+
+        <!-- navmenu -->
+        <div class="flex trapezium w-5/12 bg-DarkBlue py-2 justify-around self-end">
+            <div class="text-white text-xl">Home</div>
+            <div class="text-white text-xl">About Us</div>
+            <div class="text-white text-xl">Products</div>
+            <div class="text-white text-xl">Contact Us</div>
         </div>
+    </div>
+
 </body>
+
 </html>
