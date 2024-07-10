@@ -11,7 +11,7 @@ module.exports = {
     extend: {
       colors: {
         DarkBlue: '#1D3752',
-        DirtyWhite: '#F2F5F7'
+        DirtyWhite: '#F4F5F6'
       }
     },
   },
