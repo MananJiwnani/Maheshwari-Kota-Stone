@@ -13,15 +13,20 @@
       crossorigin="anonymous"
     />
     <style>
-        .trapezium {
-            clip-path: polygon(5% 100%, 100% 100%, 100% 0, 0 0);
-        }
+      .trapezium {
+        clip-path: polygon(5% 100%, 100% 100%, 100% 0, 0 0);
+      }
+      .carousel-text {
+       
+        padding: 1rem;
+      }
+     
     </style>
   </head>
 
-  <body>
+  <body class="bg-gray-100">
     <!-- NavBar + NavMenu (sticky) -->
-    <div class="nav flex flex-col w-screen sticky top-0 z-40 ">
+    <div class="nav flex flex-col w-screen sticky top-0 z-40">
       <!-- NavBar -->
       <nav class="flex bg-DarkBlue justify-between px-10 items-center">
         <div class="flex w-2/5 justify-between items-center">
@@ -54,164 +59,76 @@
       </div>
     </div>
 
-    <!-- Hero Section -->
-    <div id="myCarousel" class="carousel mx-6 my-2 slide" data-bs-ride="carousel">
+    <!-- Product Section -->
+
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+
+      <!-- slider -->
+       
       <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="0"
-          class=""
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-          class=""
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-          class="active"
-          aria-current="true"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#myCarousel"
-          data-bs-slide-to="3"
-          aria-label="Slide 4"
-          class=""
-        ></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item">
-          <svg
-            class="bd-placeholder-img"
-            width="100%"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <rect
-              width="100%"
-              height="100%"
-              fill="var(--bs-secondary-color)"
-            ></rect>
-          </svg>
-          <div class="container">
-            <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p class="opacity-75">
-                Some representative placeholder content for the first slide of
-                the carousel.
-              </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+
+        <!-- 1st slide -->
+
+        <div class="carousel-item active bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="https://via.placeholder.com/800x400" alt="Image 1" class="carousel-image" />
+            <div class="carousel-text">
+              <h2 class="text-2xl font-bold mb-2">Image 1 Title</h2>
+              <p class="text-gray-700">
+                Description about Image 1. This is a placeholder text for the image
+                description. It should provide some context about the image.
               </p>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <svg
-            class="bd-placeholder-img"
-            width="100%"
-            height="100%"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-            preserveAspectRatio="xMidYMid slice"
-            focusable="false"
-          >
-            <rect
-              width="100%"
-              height="100%"
-              fill="var(--bs-secondary-color)"
-            ></rect>
-          </svg>
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>
-                Some representative placeholder content for the second slide of
-                the carousel.
-              </p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-            <svg
-              class="bd-placeholder-img"
-              width="100%"
-              height="100%"
-              xmlns="http://www.w3.org/2000/svg"
-              aria-hidden="true"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--bs-secondary-color)"
-              ></rect>
-            </svg>
-            <div class="container">
-              <div class="carousel-caption">
-                <h1>Another example headline.</h1>
-                <p>
-                  Some representative placeholder content for the second slide of
-                  the carousel.
-                </p>
-                <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-              </div>
-            </div>
-          </div>
-        <div class="carousel-item active">
-          <img class="w-screen h-screen opacity-75" src=""">
-          <div class="container">
-            <div class="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
-              <p>
-                Some representative placeholder content for the third slide of
-                this carousel.
-              </p>
-              <p>
-                <a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+
+        <!-- 2nd slide -->
+
+        <div class="carousel-item bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="https://via.placeholder.com/800x400" alt="Image 2" class="carousel-image" />
+            <div class="carousel-text">
+              <h2 class="text-2xl font-bold mb-2">Image 2 Title</h2>
+              <p class="text-gray-700">
+                Description about Image 2. This is a placeholder text for the image
+                description. It should provide some context about the image.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="prev"
-      >
+        
+        <!-- 3rd slide -->
+
+        <div class="carousel-item bg-white shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center">
+            <img src="https://via.placeholder.com/800x400" alt="Image 3" class="carousel-image" />
+            <div class="carousel-text">
+              <h2 class="text-2xl font-bold mb-2">Image 3 Title</h2>
+              <p class="text-gray-700">
+                Description about Image 3. This is a placeholder text for the image
+                description. It should provide some context about the image.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- buttons of slider -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#myCarousel"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
-    <!-- Bootstrap Java Script for animation of heroes and next button -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    <!-- Bootstrap Js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
