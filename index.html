@@ -21,13 +21,14 @@
     }
 
     .carousel-text {
-
       padding: 1rem;
     }
 
     .hero {
       background-image: url(assets/Hero-bg-1.jpg);
-      /* filter: blur(5px); */
+      height: 100vh;
+      background-size: cover;
+      background-position: center;
     }
 
     .name {
@@ -44,13 +45,34 @@
     }
 
     #images {
-      width: 500px;
+      width: 100%;
       height: 370px;
       overflow-y: hidden;
     }
 
     #AU {
-      height: 90vh;
+      min-height: 90vh;
+      padding-top: 100px;
+    }
+
+    @media (max-width: 768px) {
+      #AU {
+        padding-top: 100px;
+      }
+
+      .carousel-inner img {
+        width: 100%;
+        height: auto;
+      }
+
+      .hero {
+        height: 50vh;
+      }
+    }
+
+    .carousel-image {
+      width: 100%;
+      height: auto;
     }
   </style>
 </head>
@@ -59,43 +81,43 @@
   <!-- NavBar + NavMenu (fixed) -->
   <div class="nav flex flex-col w-screen fixed z-10">
     <!-- NavBar -->
-    <nav class="flex bg-DarkBlue justify-between px-10 items-center">
-      <div class="flex gap-10 py-4 justify-between items-center">
-        <div class="logo mr-8">
-          <img src="" alt="error" />
+    <nav class="flex bg-DarkBlue justify-between px-4 py-2 md:px-10 items-center">
+      <div class="flex gap-4 md:gap-10 py-4 justify-between items-center">
+        <div class="logo mr-4 md:mr-8">
+          <img src="" alt="Logo" />
         </div>
-        <div class="name text-white text-4xl">Maheshwari Kota Stone</div>
+        <div class="name text-white text-xl md:text-4xl sm:text-2xl">Maheshwari Kota Stone</div>
       </div>
-      <div class="flex gap-8">
+      <div class="flex gap-4 md:gap-8">
         <div class="phone">
-          <img src="assets/telephone.svg" alt="" />
+          <img src="assets/telephone.svg" alt="Phone" />
         </div>
         <div class="mail flex relative bottom-0.5">
-          <img src="assets/envelope.svg" alt="" />
+          <img src="assets/envelope.svg" alt="Mail" />
         </div>
         <div>
-          <img src="assets/instagram.svg" alt="" />
+          <img src="assets/instagram.svg" alt="Instagram" />
         </div>
       </div>
     </nav>
 
     <!-- navmenu -->
-    <div class="flex trapezium w-4/12 bg-DarkBlue py-2 px-4 justify-between self-end border-t border-white z-50">
-      <div class="text-white text-base">Home</div>
-      <div class="text-white text-base">About Us</div>
-      <div class="text-white text-base">Products</div>
-      <div class="text-white text-base">Contact Us</div>
+    <div class="flex trapezium w-11/12 md:w-4/12 bg-DarkBlue py-2 px-4 justify-between self-end border-t border-white z-50">
+      <div class="text-white text-base"><a href="#top">Home</a></div>
+      <div class="text-white text-base"><a href="#AU">About Us</a></div>
+      <div class="text-white text-base"><a href="#P">Products</a></div>
+      <div class="text-white text-base"><a href="#WTU">Contact Us</a></div>
     </div>
   </div>
 
   <!-- hero section -->
-  <div class="hero h-screen bg-no-repeat bg-center bg-cover"></div>
+  <div id="top" class="hero"></div>
 
   <!-- About Us Section -->
-  <div id="AU" class="flex flex-col pt-10 mt-6 items-center">
-    <div class="heading text-center text-6xl">About Us</div>
-    <div class="content flex p-6 mt-6 text-xl">
-      <p class="text-justify pl-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit animi laborum dolorum
+  <div id="AU" class="flex flex-col p-2 mt-6 items-center">
+    <div class="heading text-center text-4xl md:text-6xl">About Us</div>
+    <div class="content flex flex-col-reverse px-6 mt-6 lg:text-xl md:flex-row">
+      <p class="text-justify pl-6 pt-4 ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit animi laborum dolorum
         eius eum qui, minus laudantium recusandae, fuga soluta fugiat similique. Repellat, omnis ea ullam nostrum
         architecto corrupti culpa sapiente ipsam quam exercitationem reprehenderit, suscipit amet deserunt aperiam!
         Earum ipsa voluptas obcaecati iure doloremque rem! Illum quis, nostrum enim dolorum eos tenetur in minus harum,
@@ -104,22 +126,22 @@
         necessitatibus suscipit explicabo maiores, quas eveniet illum id aperiam exercitationem repellat labore delectus
         quod? Commodi sint eveniet dignissimos.
       </p>
-      <div id="carouselExampleAutoplaying" class="carousel slide ml-8 mt-2 mr-2 float-right" data-bs-ride="carousel">
-        <div class="carousel-inner" id="images">
+      <div id="carouselExampleAutoplaying" class="carousel slide ml-0 md:ml-8 py-4 md:mr-2 float-right" data-bs-ride="carousel">
+        <div class="carousel-inner " id="images">
           <div class="carousel-item active" data-bs-interval="3000">
-            <img src="assets/aboutus-1.jpg" class="d-block" alt="...">
+            <img src="assets/aboutus-1.jpg" class="d-block w-100" alt="Image 1">
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="assets/aboutus-2.jpg" class="d-block" alt="...">
+            <img src="assets/aboutus-2.jpg" class="d-block w-100" alt="Image 2">
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="assets/aboutus-3.jpg" class="d-block" alt="...">
+            <img src="assets/aboutus-3.jpg" class="d-block w-100" alt="Image 3">
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="assets/aboutus-4.jpg" class="d-block" alt="...">
+            <img src="assets/aboutus-4.jpg" class="d-block w-100" alt="Image 4">
           </div>
           <div class="carousel-item" data-bs-interval="3000">
-            <img src="assets/aboutus-5.jpg" class="d-block" alt="...">
+            <img src="assets/aboutus-5.jpg" class="d-block w-100" alt="Image 5">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -137,29 +159,24 @@
   </div>
 
   <!-- Product Section -->
-  <div id="P">
-
-    <div id="myCarousel" class="carousel slide my-12 mx-16 h-90vh p-10 " data-bs-ride="carousel">
-
+  <div id="P" class="pt-10 md:pt-50">
+    <div id="myCarousel" class="carousel slide my-12 mx-2 md:mx-16 px-4 md:px-10" data-bs-ride="carousel">
       <!-- slider -->
-
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
           aria-current="true"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-      <div class="carousel-inner ">
+      <div class="carousel-inner">
 
         <!-- 1st slide -->
-
-        <div class="carousel-item active bg-slate-400 shadow-lg rounded-lg overflow-hidden">
-          <div class="d-flex justify-content-center align-items-center">
-            <div class="flex flex-col justify-content-center bg-slate-400 h-screen w-screen px-16">
-              <!-- div enclosing image chan -->
-              <img src="https://via.placeholder.com/800x400" alt="Image 1" class="carousel-image" />
+        <div class="carousel-item py-10 md:py-20 active bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16">
+              <img src="https://via.placeholder.com/800x400" alt="Image 1" class="carousel-image " />
             </div>
-            <div class="carousel-text ">
+            <div class="carousel-text">
               <h2 class="text-2xl font-bold mb-2">Image 1 Title</h2>
               <p class="text-gray-700">
                 Description about Image 1. This is a placeholder text for the image
@@ -170,14 +187,12 @@
         </div>
 
         <!-- 2nd slide -->
-
-        <div class="carousel-item bg-slate-400 shadow-lg rounded-lg overflow-hidden">
-          <div class="d-flex justify-content-center align-items-center">
-            <div class="flex flex-col justify-content-center bg-slate-400 h-screen w-screen px-16">
-              <!-- div enclosing image chan -->
+        <div class="carousel-item py-10 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16">
               <img src="https://via.placeholder.com/800x400" alt="Image 2" class="carousel-image" />
             </div>
-            <div class="carousel-text ">
+            <div class="carousel-text">
               <h2 class="text-2xl font-bold mb-2">Image 2 Title</h2>
               <p class="text-gray-700">
                 Description about Image 2. This is a placeholder text for the image
@@ -188,14 +203,12 @@
         </div>
 
         <!-- 3rd slide -->
-
-        <div class="carousel-item bg-slate-400 shadow-lg rounded-lg overflow-hidden">
-          <div class="d-flex justify-content-center align-items-center">
-            <div class="flex flex-col justify-content-center bg-slate-400 h-screen w-screen px-16">
-              <!-- div enclosing image chan -->
+        <div class="carousel-item py-10 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16">
               <img src="https://via.placeholder.com/800x400" alt="Image 3" class="carousel-image" />
             </div>
-            <div class="carousel-text ">
+            <div class="carousel-text">
               <h2 class="text-2xl font-bold mb-2">Image 3 Title</h2>
               <p class="text-gray-700">
                 Description about Image 3. This is a placeholder text for the image
@@ -204,7 +217,8 @@
             </div>
           </div>
         </div>
-        <!-- buttons of slider -->
+
+        <!--Slider button-->
         <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
@@ -215,60 +229,60 @@
         </button>
       </div>
     </div>
+  </div>
 
-
-
-
-    <!-- Write To Us -->
-
-    <div id="WTU" class="flex flex-col pt-6 items-center">
-      <div class="heading text-center text-6xl">Contact Us</div>
-      <div class="form mt-8">
+  <!-- Write To Us -->
+  <div id="WTU" class="flex flex-col py-6 px-2 items-center">
+    <div class="heading text-center text-4xl md:text-6xl">Contact Us</div>
+    <div class="form mt-8">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScKcUOvtopaStzVSl_SccDiFJ-FVzpq9FkYDRPGWg2mX1mW1A/viewform?embedded=true"
+        width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+    </div>
+    <div class="or mt-12 mb-14 text-2xl">Or</div>
+    <div class="contact flex flex-col md:flex-row mb-14 gap-14 md:gap-28 ">
+      <div class="flex flex-col text-center md:text-left justify-center relative">
+        <div class="subheading underline underline-offset-4">Location 1</div>
+        <div class="address">Address blah<br>blah<br>blah blah</div>
+      </div>
+      <div class="map mb-14">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScKcUOvtopaStzVSl_SccDiFJ-FVzpq9FkYDRPGWg2mX1mW1A/viewform?embedded=true"
-          width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
-      <div class="or mt-12 mb-14 text-2xl">Or</div>
-      <div class="contact flex mb-14 gap-28">
-        <div class="flex flex-col text-left justify-center relative bottom-14">
-          <div class="subheading">Location 1</div>
-          <div class="address w-100">Address blah<br>blah<br>blah blah</div>
-        </div>
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
-            width="600" height="450" style="border: 1px solid lightgray;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-      <div class="contact flex my-14 gap-28">
-        <div class="map">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
-            width="600" height="450" style="border: 1px solid lightgray;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <div class="flex flex-col text-left justify-center bottom-14 relative">
-          <div class="subheading">Location 2</div>
-          <div class="address w-100">Address blah<br>blah<br>blah blah</div>
-        </div>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
+          width="600" height="450" style="border: 1px solid lightgray;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
+    <div class="contact flex flex-col-reverse md:flex-row mb-14 gap-14 md:gap-28">
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
+          width="600" height="450" style="border: 1px solid lightgray;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="flex flex-col text-center md:text-left justify-center bottom-14 relative">
+        <div class="subheading underline underline-offset-4">Location 2</div>
+        <div class="address w-100">Address blah<br>blah<br>blah blah</div>
+      </div>
+    </div>
+  </div>
 
+  <!-- Bootstrap Js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-
-
-
-
-
-
-
-
-    <!-- Bootstrap Js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
