@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Headland+One&family=Inter:wght@100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.trapezium {
+  clip-path: polygon(5% 100%, 100% 100%, 100% 0, 0 0);
+}
+
+.navbutton{
+    color: white;
+    text-decoration: none;
+}
+
+.carousel-text {
+  padding: 1rem;
+}
+
+.hero {
+  background-image: url(assets/Hero-bg-1.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.name {
+  font-family: "Headland One", serif;
+}
+
+.heading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+.subheading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 38px;
+}
+
+#images {
+  width: 100%;
+  height: 370px;
+  overflow-y: hidden;
+}
+
+#AU {
+  min-height: 90vh;
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  #AU {
+    padding-top: 100px;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero {
+    height: 50vh;
+  }
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+}
