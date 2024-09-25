@@ -4,18 +4,15 @@
   font-family: "Inter", sans-serif;
 }
 
-.trapezium {
+/* .trapezium {
   clip-path: polygon(5% 100%, 100% 100%, 100% 0, 0 0);
-}
+} */
 
 .navbutton{
     color: white;
     text-decoration: none;
 }
 
-.carousel-text {
-  padding: 1rem;
-}
 
 .hero {
   background-image: url(assets/Hero-bg-1.jpg);
@@ -30,14 +27,14 @@
 
 .heading {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
 }
 
 .subheading {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+  sans-serif;
   font-size: 38px;
 }
 
@@ -48,26 +45,44 @@
 }
 
 #AU {
-  min-height: 90vh;
-  padding-top: 100px;
+  min-height: 80vh;
+  padding-top: 150px;
+  scroll-margin-top: 22vh;
+}
+
+.carousel-text {
+  padding: 1rem;
+}
+
+.AUcarousel{
+  max-width: 40vw;
+}
+
+.carousel-inner{
+  border-radius: 10px;
 }
 
 @media (max-width: 768px) {
   #AU {
     padding-top: 100px;
   }
-
   .carousel-inner img {
     width: 100%;
     height: auto;
   }
-
   .hero {
     height: 50vh;
   }
 }
-
 .carousel-image {
   width: 100%;
   height: auto;
+}
+
+#P {
+  scroll-margin-top: 25vh;
+  border-radius: 10px;
+}
+#WTU{
+  scroll-margin-top: 20vh;
 }
