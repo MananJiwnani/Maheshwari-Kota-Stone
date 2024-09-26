@@ -108,6 +108,17 @@ body{
   scroll-margin-top: 150px;
   border-radius: 10px;
 }
+
+/* .maxh{
+} */
+/* .minh{
+  min-height: 310px;
+  } */
+  .maxh img{
+    border-radius: 5px;
+    height: 310px;
+ }
+
 #WTU{
   scroll-margin-top: 130px;
 }
