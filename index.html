@@ -22,18 +22,20 @@
           <img src="assets/logo_shades_of_blue.jpg" alt="Logo" />
         </div>
         <div class="name text-white text-xl md:text-4xl sm:text-2xl">
-          Maheshwari Kota Stone
+          Great India Kota Stone
         </div>
       </div>
       <div class="flex gap-4 md:gap-8">
-        <div class="phone">
-          <img src="assets/telephone.svg" alt="Phone" />
+        <div class="whatsapp relative">
+          <a href="https://wa.me/+919214092091" target="_blank"><img src="assets/whatsapp.svg" alt="WhatsApp" /></a>
         </div>
         <div class="mail flex relative bottom-0.5">
-          <img src="assets/envelope.svg" alt="Mail" />
+          <a href="mailto:shivanshmalpani@gmail.com?cc=rajivmalpani@hotmail.com"><img src="assets/envelope.svg"
+              alt="Mail" /></a>
         </div>
         <div>
-          <img src="assets/instagram.svg" alt="Instagram" />
+          <a href="https://www.instagram.com/great_india_kotastone/" target="_blank"><img src="assets/instagram.svg"
+              alt="Instagram" /></a>
         </div>
       </div>
     </nav>
@@ -251,31 +253,7 @@
         src="https://docs.google.com/forms/d/e/1FAIpQLScKcUOvtopaStzVSl_SccDiFJ-FVzpq9FkYDRPGWg2mX1mW1A/viewform?embedded=true"
         width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
-    <div class="or mt-12 mb-14 text-2xl">Or</div>
-    <div class="contact flex flex-col md:flex-row mb-14 gap-14 md:gap-28">
-      <div class="flex flex-col text-center md:text-left justify-center relative">
-        <div class="subheading underline underline-offset-4">Location 1</div>
-        <div class="address">Address blah<br />blah<br />blah blah</div>
-      </div>
-      <div class="map mb-14">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
-          width="600" height="450" style="border: 1px solid lightgray" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-    <div class="contact flex flex-col-reverse md:flex-row mb-14 gap-14 md:gap-28">
-      <div class="map flex">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
-          width="600" height="450" style="border: 1px solid lightgray" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-      <div class="flex flex-col text-center md:text-left justify-center bottom-14 relative">
-        <div class="subheading underline underline-offset-4">Location 2</div>
-        <div class="address w-100">Address blah<br />blah<br />blah blah</div>
-      </div>
-    </div>
+    
   </div>
 
   <!-- Bootstrap Js  -->
@@ -295,12 +273,13 @@
       });
     });
 
+    // Hide Navmenu Script
     let lastScrollTop = 0;
     const navMenu = document.getElementById('navmenu');
 
     window.addEventListener('scroll', function () {
       let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > 250) {
+      if (scrollTop > 200) {
         if (scrollTop > lastScrollTop) {
           navMenu.classList.add('navmenu-hide');
         } else {
