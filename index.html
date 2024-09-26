@@ -1,441 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Maheshwari Kota Stone</title>
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- Bootstrap CSS Link -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-  </head>
 
-  <body class="bg-LightGray">
-    <!-- NavBar + NavMenu (fixed) -->
-    <div class="nav flex flex-col w-screen fixed z-10">
-      <!-- NavBar -->
-      <nav
-        class="flex md:px-16 bg-DarkBlue justify-between items-center"
-      >
-        <div class="flex gap-4 md:gap-10 py-4 justify-between items-center">
-          <div class="logo mr-4 md:mr-8">
-            <img src="" alt="Logo" />
-          </div>
-          <div class="name text-white text-xl md:text-4xl sm:text-2xl">
-            Maheshwari Kota Stone
-          </div>
-        </div>
-        <div class="flex gap-4 md:gap-8">
-          <div class="phone">
-            <img src="assets/telephone.svg" alt="Phone" />
-          </div>
-          <div class="mail flex relative bottom-0.5">
-            <img src="assets/envelope.svg" alt="Mail" />
-          </div>
-          <div>
-            <img src="assets/instagram.svg" alt="Instagram" />
-          </div>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maheshwari Kota Stone</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Bootstrap CSS Link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
 
-      <!-- navmenu -->
-      <div class="navmenu flex bg-DarkBlue py-2 px-4 justify-content-around border-t border-white z-50">
-        <div>
-          <a class="navbutton" href="#top">Home</a>
+<body class="bg-LightGray">
+  <!-- NavBar + NavMenu (fixed) -->
+  <div class="nav flex flex-col w-screen fixed z-50">
+    <!-- NavBar -->
+    <nav class="flex md:px-16 bg-DarkBlue justify-between items-center">
+      <div class="flex gap-2 md:gap-10 py-4 justify-between items-center">
+        <div class="logo mr-4 md:mr-4">
+          <img src="assets/logo_shades_of_blue.jpg" alt="Logo" />
+        </div>
+        <div class="name text-white text-xl md:text-4xl sm:text-2xl">
+          Maheshwari Kota Stone
+        </div>
+      </div>
+      <div class="flex gap-4 md:gap-8">
+        <div class="phone">
+          <img src="assets/telephone.svg" alt="Phone" />
+        </div>
+        <div class="mail flex relative bottom-0.5">
+          <img src="assets/envelope.svg" alt="Mail" />
         </div>
         <div>
-          <a class="navbutton" href="#AU">About Us</a>
+          <img src="assets/instagram.svg" alt="Instagram" />
         </div>
-        <div>
-          <a class="navbutton" href="#P">Products</a>
+      </div>
+    </nav>
+
+    <!-- navmenu -->
+    <div id="navmenu" class="navmenu flex bg-DarkBlue py-2 px-4 justify-content-around border-t border-white z-10">
+      <div>
+        <a class="navbutton" href="#top">Home</a>
+      </div>
+      <div>
+        <a class="navbutton" href="#AU">About Us</a>
+      </div>
+      <div>
+        <a class="navbutton" href="#P">Products</a>
+      </div>
+      <div>
+        <a class="navbutton" href="#WTU">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- hero section -->
+  <div id="top" class="hero"></div>
+
+  <!-- About Us Section -->
+  <div id="AU" class="flex flex-col p-2 mt-6 items-center">
+    <div class="heading text-center text-4xl md:text-6xl">About Us</div>
+    <div class="content flex flex-col-reverse px-6 mt-6 text-lg lg:text-xl md:flex-row">
+      <p class="text-justify pl-4 pt-4">
+        <span class="font-bold">Welcome to Maheshwari Sales Corporation </span>, where we bring you the finest
+        Kota stone/Lime stone and Mandana sandstone. With over 45 years of
+        experience in the industry and over 7500 customers satisfied, we pride
+        ourselves on delivering top-notch quality and service. Our extensive
+        range of products includes all types of Kota stone, catering to your
+        every need.
+      </p>
+      <div id="carouselExampleAutoplaying" class="carousel AUcarousel slide ml-0 md:ml-8 py-4 md:mr-2 float-right"
+        data-bs-ride="carousel">
+        <div class="carousel-inner" id="images">
+          <div class="carousel-item active" data-bs-interval="3000">
+            <img src="assets/aboutus-1.jpg" class="d-block w-100" alt="Image 1" />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/aboutus-2.jpg" class="d-block w-100" alt="Image 2" />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/aboutus-3.jpg" class="d-block w-100" alt="Image 3" />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/aboutus-4.jpg" class="d-block w-100" alt="Image 4" />
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/aboutus-5.jpg" class="d-block w-100" alt="Image 5" />
+          </div>
         </div>
-        <div>
-          <a class="navbutton" href="#WTU">Contact Us</a>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Section -->
+  <div id="P" class="pt-6 md:pt-50">
+    <div id="myCarousel" class="carousel slide my-12 mx-2 md:mx-16 px-4 md:px-10" data-bs-ride="carousel">
+      <!-- slider -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-label="Slide 1"
+          aria-current="true"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- 1st slide -->
+        <div class="carousel-item py-10 md:py-20 active bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16">
+              <img src="https://via.placeholder.com/800x400" alt="Image 1" class="carousel-image" />
+            </div>
+            <div class="carousel-text">
+              <h2 class="text-2xl font-bold mb-2">Image 1 Title</h2>
+              <p class="text-gray-700">
+                Description about Image 1. This is a placeholder text for the
+                image description. It should provide some context about the
+                image.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2nd slide -->
+        <div class="carousel-item py-10 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16">
+              <img src="https://via.placeholder.com/800x400" alt="Image 2" class="carousel-image" />
+            </div>
+            <div class="carousel-text">
+              <h2 class="text-2xl font-bold mb-2">Image 2 Title</h2>
+              <p class="text-gray-700">
+                Description about Image 2. This is a placeholder text for the
+                image description. It should provide some context about the
+                image.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3rd slide -->
+        <div class="carousel-item py-10 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+          <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16">
+              <img src="https://via.placeholder.com/800x400" alt="Image 3" class="carousel-image" />
+            </div>
+            <div class="carousel-text">
+              <h2 class="text-2xl font-bold mb-2">Image 3 Title</h2>
+              <p class="text-gray-700">
+                Description about Image 3. This is a placeholder text for the
+                image description. It should provide some context about the
+                image.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--Slider button-->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <!-- Product card -->
+  <main>
+    <div class="view">
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+          alt="" />
+        <div class="card-content">
+          <h2>Card Heading</h2>
+          <p>
+
+          </p>
+          <a href="#" class="button">
+            Find out more
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+          alt="" />
+        <div class="card-content">
+          <h2>Card Heading</h2>
+          <p>
+
+          </p>
+          <a href="#" class="button">
+            Find out more
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+          alt="" />
+        <div class="card-content">
+          <h2>Card Heading</h2>
+          <p>
+
+          </p>
+          <a href="#" class="button">
+            Find out more
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
+          alt="" />
+        <div class="card-content">
+          <h2>Card Heading</h2>
+          <p>
+
+          </p>
+          <a href="#" class="button">
+            Find out more
+            <span class="material-symbols-outlined"> arrow_right_alt </span>
+          </a>
         </div>
       </div>
     </div>
+  </main>
 
-    <!-- hero section -->
-    <div id="top" class="hero"></div>
-
-    <!-- About Us Section -->
-    <div id="AU" class="flex flex-col p-2 mt-6 items-center">
-      <div class="heading text-center text-4xl md:text-6xl">About Us</div>
-      <div
-        class="content flex flex-col-reverse px-6 mt-6 text-lg lg:text-xl md:flex-row"
-      >
-        <p class="text-justify pl-4 pt-4">
-          <span class="font-bold">Welcome to Maheshwari Sales Corporation </span>, where we bring you the finest
-          Kota stone/Lime stone and Mandana sandstone. With over 45 years of
-          experience in the industry and over 7500 customers satisfied, we pride
-          ourselves on delivering top-notch quality and service. Our extensive
-          range of products includes all types of Kota stone, catering to your
-          every need.
-        </p>
-        <div
-          id="carouselExampleAutoplaying"
-          class="carousel AUcarousel slide ml-0 md:ml-8 py-4 md:mr-2 float-right"
-          data-bs-ride="carousel"
-        >
-          <div class="carousel-inner" id="images">
-            <div class="carousel-item active" data-bs-interval="3000">
-              <img
-                src="assets/aboutus-1.jpg"
-                class="d-block w-100"
-                alt="Image 1"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="assets/aboutus-2.jpg"
-                class="d-block w-100"
-                alt="Image 2"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="assets/aboutus-3.jpg"
-                class="d-block w-100"
-                alt="Image 3"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="assets/aboutus-4.jpg"
-                class="d-block w-100"
-                alt="Image 4"
-              />
-            </div>
-            <div class="carousel-item" data-bs-interval="3000">
-              <img
-                src="assets/aboutus-5.jpg"
-                class="d-block w-100"
-                alt="Image 5"
-              />
-            </div>
-          </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-      </div>
+  <!-- Write To Us -->
+  <div id="WTU" class="flex flex-col py-6 px-2 items-center">
+    <div class="heading text-center text-4xl md:text-6xl">Contact Us</div>
+    <div class="form mt-8">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScKcUOvtopaStzVSl_SccDiFJ-FVzpq9FkYDRPGWg2mX1mW1A/viewform?embedded=true"
+        width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
-
-    <!-- Product Section -->
-    <div id="P" class="pt-6 md:pt-50">
-      <div
-        id="myCarousel"
-        class="carousel slide my-12 mx-2 md:mx-16 px-4 md:px-10"
-        data-bs-ride="carousel"
-      >
-        <!-- slider -->
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="0"
-            class="active"
-            aria-label="Slide 1"
-            aria-current="true"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <!-- 1st slide -->
-          <div
-            class="carousel-item py-10 md:py-20 active bg-slate-400 shadow-lg rounded-lg overflow-hidden"
-          >
-            <div
-              class="d-flex justify-content-center align-items-center flex-column flex-md-row"
-            >
-              <div
-                class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16"
-              >
-                <img
-                  src="https://via.placeholder.com/800x400"
-                  alt="Image 1"
-                  class="carousel-image"
-                />
-              </div>
-              <div class="carousel-text">
-                <h2 class="text-2xl font-bold mb-2">Image 1 Title</h2>
-                <p class="text-gray-700">
-                  Description about Image 1. This is a placeholder text for the
-                  image description. It should provide some context about the
-                  image.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 2nd slide -->
-          <div
-            class="carousel-item py-10 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden"
-          >
-            <div
-              class="d-flex justify-content-center align-items-center flex-column flex-md-row"
-            >
-              <div
-                class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16"
-              >
-                <img
-                  src="https://via.placeholder.com/800x400"
-                  alt="Image 2"
-                  class="carousel-image"
-                />
-              </div>
-              <div class="carousel-text">
-                <h2 class="text-2xl font-bold mb-2">Image 2 Title</h2>
-                <p class="text-gray-700">
-                  Description about Image 2. This is a placeholder text for the
-                  image description. It should provide some context about the
-                  image.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- 3rd slide -->
-          <div
-            class="carousel-item py-10 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden"
-          >
-            <div
-              class="d-flex justify-content-center align-items-center flex-column flex-md-row"
-            >
-              <div
-                class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16"
-              >
-                <img
-                  src="https://via.placeholder.com/800x400"
-                  alt="Image 3"
-                  class="carousel-image"
-                />
-              </div>
-              <div class="carousel-text">
-                <h2 class="text-2xl font-bold mb-2">Image 3 Title</h2>
-                <p class="text-gray-700">
-                  Description about Image 3. This is a placeholder text for the
-                  image description. It should provide some context about the
-                  image.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!--Slider button-->
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#myCarousel"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
+    <div class="or mt-12 mb-14 text-2xl">Or</div>
+    <div class="contact flex flex-col md:flex-row mb-14 gap-14 md:gap-28">
+      <div class="flex flex-col text-center md:text-left justify-center relative">
+        <div class="subheading underline underline-offset-4">Location 1</div>
+        <div class="address">Address blah<br />blah<br />blah blah</div>
       </div>
-    </div>
-    <!-- Product card -->
-    <main>
-      <div class="view">
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
-            alt=""
-          />
-          <div class="card-content">
-            <h2>Card Heading</h2>
-            <p>
-              
-            </p>
-            <a href="#" class="button">
-              Find out more
-              <span class="material-symbols-outlined"> arrow_right_alt </span>
-            </a>
-          </div>
-        </div>
-        <div class="card">
-            <img
-              src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
-              alt=""
-            />
-            <div class="card-content">
-              <h2>Card Heading</h2>
-              <p>
-                
-              </p>
-              <a href="#" class="button">
-                Find out more
-                <span class="material-symbols-outlined"> arrow_right_alt </span>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
-              alt=""
-            />
-            <div class="card-content">
-              <h2>Card Heading</h2>
-              <p>
-               
-              </p>
-              <a href="#" class="button">
-                Find out more
-                <span class="material-symbols-outlined"> arrow_right_alt </span>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
-              alt=""
-            />
-            <div class="card-content">
-              <h2>Card Heading</h2>
-              <p>
-               
-              </p>
-              <a href="#" class="button">
-                Find out more
-                <span class="material-symbols-outlined"> arrow_right_alt </span>
-              </a>
-            </div>
-          </div>
-          <div class="card">
-            <img
-              src="https://images.unsplash.com/photo-1656618020911-1c7a937175fd?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc1MzQyNTE&ixlib=rb-1.2.1&q=80"
-              alt=""
-            />
-            <div class="card-content">
-              <h2>Card Heading</h2>
-              <p>
-               
-              </p>
-              <a href="#" class="button">
-                Find out more
-                <span class="material-symbols-outlined"> arrow_right_alt </span>
-              </a>
-            </div>
-          </div>
-      </div>
-    </main>
-
-    <!-- Write To Us -->
-    <div id="WTU" class="flex flex-col py-6 px-2 items-center">
-      <div class="heading text-center text-4xl md:text-6xl">Contact Us</div>
-      <div class="form mt-8">
+      <div class="map mb-14">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLScKcUOvtopaStzVSl_SccDiFJ-FVzpq9FkYDRPGWg2mX1mW1A/viewform?embedded=true"
-          width="640"
-          height="800"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        >
-      </div>
-      <div class="or mt-12 mb-14 text-2xl">Or</div>
-      <div class="contact flex flex-col md:flex-row mb-14 gap-14 md:gap-28">
-        <div
-          class="flex flex-col text-center md:text-left justify-center relative"
-        >
-          <div class="subheading underline underline-offset-4">Location 1</div>
-          <div class="address">Address blah<br />blah<br />blah blah</div>
-        </div>
-        <div class="map mb-14">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style="border: 1px solid lightgray"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div
-        class="contact flex flex-col-reverse md:flex-row mb-14 gap-14 md:gap-28"
-      >
-        <div class="map flex">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
-            width="600"
-            height="450"
-            style="border: 1px solid lightgray"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-        <div
-          class="flex flex-col text-center md:text-left justify-center bottom-14 relative"
-        >
-          <div class="subheading underline underline-offset-4">Location 2</div>
-          <div class="address w-100">Address blah<br />blah<br />blah blah</div>
-        </div>
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
+          width="600" height="450" style="border: 1px solid lightgray" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
+    <div class="contact flex flex-col-reverse md:flex-row mb-14 gap-14 md:gap-28">
+      <div class="map flex">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.58887260131!2d75.80209387468447!3d26.853025762654507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5d0abb464cf%3A0x43440aa416c9fdaf!2sWorld%20Trade%20Park!5e0!3m2!1sen!2sin!4v1720697040224!5m2!1sen!2sin"
+          width="600" height="450" style="border: 1px solid lightgray" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="flex flex-col text-center md:text-left justify-center bottom-14 relative">
+        <div class="subheading underline underline-offset-4">Location 2</div>
+        <div class="address w-100">Address blah<br />blah<br />blah blah</div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Bootstrap Js  -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap Js  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
 
-    <!-- Smooth Scroll Script -->
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
+  <!-- Smooth Scroll Script -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
 
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
         });
       });
-    </script>
-  </body>
+    });
+
+    let lastScrollTop = 0;
+    const navMenu = document.getElementById('navmenu');
+
+    window.addEventListener('scroll', function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > 250) {
+        if (scrollTop > lastScrollTop) {
+          navMenu.classList.add('navmenu-hide');
+        } else {
+          navMenu.classList.remove('navmenu-hide');
+        }
+      } else {
+        navMenu.classList.remove('navmenu-hide');
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+</body>
+
 </html>
