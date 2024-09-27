@@ -13,7 +13,7 @@ body {
   background-size: 1000px;
   overflow-x: hidden;
 }
-
+/* Navbar */
 .navbutton {
   color: white;
   text-decoration: none;
@@ -29,7 +29,7 @@ body {
   height: 40px;
   border-radius: 5px;
 }
-
+/* NavMenu */
 .navmenu {
   transition: transform 0.3s ease-in-out;
   z-index: -10;
@@ -40,7 +40,7 @@ body {
   /* Adjust as needed to hide the menu */
 }
 
-
+/* Heroes section */
 .hero {
   background-image: url(/assets/Hero-bg-1.jpg);
   height: 100vh;
@@ -70,7 +70,7 @@ body {
   height: 370px;
   overflow-y: hidden;
 }
-
+/* About Us section */
 #AU {
   min-height: 80vh;
   padding-top: 150px;
@@ -110,6 +110,7 @@ body {
 @media (max-width: 768px) {
   #AU {
     padding-top: 100px;
+    width:80vw;
   }
 
   .carousel-inner img {
@@ -145,7 +146,7 @@ body {
   width: 100%;
   height: auto;
 }
-
+/* Product Section */
 #P {
   scroll-margin-top: 150px;
   border-radius: 10px;
@@ -175,12 +176,7 @@ body {
   object-position: center;
 }
 
-
-#WTU {
-  scroll-margin-top: 130px;
-}
-
-
+/* Product Card */
 .view {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -293,6 +289,18 @@ body {
   vertical-align: middle;
 }
 
+/* Write to us */
+#WTU {
+  scroll-margin-top: 130px;
+}
+
+@media (max-width: 600px) {
+  #WTU{
+    max-width: 90vw;
+  }
+}
+
+/* Footer Section */
 .footer-column{
   width: 23vw;
 }
