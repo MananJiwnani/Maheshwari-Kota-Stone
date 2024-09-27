@@ -356,10 +356,116 @@ h5 {
   .gform{
     height: 1350px;
   }
+
 }
 
 @media only screen and (max-width: 452px){
   .gform{
     height: 1500px;
+  }
+}
+
+/* NavBar */
+.navbar-icons{
+  gap: 1.5rem;
+}
+
+@media (max-width: 620px){
+  .navbar-icons{
+    gap: 10px;
+  }
+}
+
+@media (max-width: 576px){
+  .name{
+    font-size: 20px;
+  }
+  .logo img{
+    height: 32px;
+    width: 32px;
+    margin-left: 4px;
+    margin-right: none;
+  }
+
+  .instagram img{
+    height: 18px;
+  } 
+
+  .nav-icons{
+    width: 20px;
+    height: 20px;
+  }
+  .instagram{
+    margin-right: 2px;
+  }
+}
+
+@media (max-width: 460px){
+  .name{
+    font-size: 18px;
+  }
+  .logo img{
+    height: 32px;
+    width: 32px;
+    margin-left: 3px;
+    margin-right: none;
+  }
+
+  .navbar-icons{
+    gap: 7px;
+  }
+
+  .nav-icons{
+    width: 20px;
+    height: 20px;
+  }
+  .instagram{
+    margin-right: 2px;
+  }
+  
+  .instagram img{
+    height: 18px;
+  }
+}
+
+/* NavMenu */
+@media (max-width: 560px){
+  .hover a{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 450px){
+  .hover a{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 500px){
+  .nav-icons{
+    top: 2px;
+  }
+  
+  .instagram{
+    top: 3px;
+  }
+  .instagram img{
+    height: 24px;
+  }
+}
+
+nav{
+  padding:0 4vw;
+}
+
+@media (max-width: 768px){
+  .navBar{
+    margin-right: 14px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 500px){
+  .instagram{
+    top: 0px;
   }
 }
