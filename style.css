@@ -21,6 +21,14 @@ body {
   font-weight: 500;
 }
 
+.hover{
+  transition: transform 0.2s ease;
+}
+
+.hover:hover {
+  transform: scale(1.2);
+}
+
 .whatsapp {
   bottom: 1px;
 }
@@ -298,5 +306,11 @@ body {
 }
 
 footer{
-  width: 97vw;
+  width: 96vw;
+}
+
+@media only screen and (max-width: 576px){
+  footer{
+    padding-left: 30px;
+  }
 }
