@@ -11,6 +11,7 @@
 body {
   background-image: url(assets/white-simple-textured-design-background.jpg);
   background-size: 1000px;
+  overflow-x: hidden;
 }
 
 .navbutton {
@@ -246,4 +247,12 @@ body {
 
 .material-symbols-outlined {
   vertical-align: middle;
+}
+
+.footer-column{
+  width: 23vw;
+}
+
+footer{
+  width: 100vw;
 }
