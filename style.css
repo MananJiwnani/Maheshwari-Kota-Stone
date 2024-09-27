@@ -202,6 +202,11 @@ body {
   .view {
     grid-template-columns: repeat(2, 1fr);
   }
+  .card {
+    max-width: 300px;
+    min-width: 290px;
+    width: 100%;
+  }
 }
 
 
@@ -212,7 +217,8 @@ body {
     align-items: center; 
   }
   .card {
-    max-width: 248px;
+    max-width: 290px;
+    min-width: 280px;
     width: 100%;
   }
 }
@@ -292,5 +298,5 @@ body {
 }
 
 footer{
-  width: 100vw;
+  width: 97vw;
 }
