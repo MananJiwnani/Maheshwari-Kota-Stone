@@ -10,6 +10,7 @@
   <!-- Bootstrap CSS Link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body class="bg-LightGray">
@@ -61,47 +62,45 @@
   <div id="top" class="hero"></div>
 
   <!-- About Us Section -->
-  <div id="AU" class="flex flex-col p-2 mt-6 items-center">
+  <div id="AU" class="flex flex-col p-4 mt-6 items-center">
     <div class="heading text-center text-4xl md:text-6xl">About Us</div>
-    <div class="content flex flex-col-reverse px-6 mt-6 text-lg lg:text-xl md:flex-row">
-      <p class="text-justify pl-4 pt-4">
-        <span class="font-bold">Welcome to Maheshwari Sales Corporation </span>, where we bring you the finest
-        Kota stone/Lime stone and Mandana sandstone. With over 45 years of
-        experience in the industry and over 7500 customers satisfied, we pride
-        ourselves on delivering top-notch quality and service. Our extensive
-        range of products includes all types of Kota stone, catering to your
-        every need.
-      </p>
-      <div id="carouselExampleAutoplaying" class="carousel AUcarousel slide ml-0 md:ml-8 py-4 md:mr-2 float-right"
-        data-bs-ride="carousel">
-        <div class="carousel-inner" id="images">
-          <div class="carousel-item active" data-bs-interval="3000">
-            <img src="assets/aboutus-1.jpg" class="d-block w-100" alt="Image 1" />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="assets/aboutus-2.jpg" class="d-block w-100" alt="Image 2" />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="assets/aboutus-3.jpg" class="d-block w-100" alt="Image 3" />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="assets/aboutus-4.jpg" class="d-block w-100" alt="Image 4" />
-          </div>
-          <div class="carousel-item" data-bs-interval="3000">
-            <img src="assets/aboutus-5.jpg" class="d-block w-100" alt="Image 5" />
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+    <div class="content flex px-6 mt-6 text-lg lg:text-xl md:flex-row">
+      <div class="text mr-4">
+        <p class="text-justify pl-4 pt-4">
+          <b>Welcome to Great India Kota Stone</b>, your trusted partner in the finest Kota stone,
+          limestone, and Mandana sandstone. With over <b>45 years of industry expertise</b> and <b>more than 7,500 happy
+            customers</b>, we take pride in providing the best quality and service.
+
+          Our extensive range of products covers all types of Kota stone, ensuring that we meet every need you have.
+          Whether you're looking for specific sizes or thicknesses, we've got you covered. <b>All sizes and thicknesses
+            are
+            available</b> to suit any project, big or small.
+
+          Operating with two state-of-the-art factories—<b>Maheshwari Stone Corporation</b> and <b>Ramganjmandi Stone
+            Polishing
+            Industries</b>—we guarantee precision, durability, and excellence in every stone we deliver. Let us help you
+          find
+          the perfect stone solution for your next project!
+        </p>
       </div>
+      <div class="swiper ml-0 md:ml-8 py-4 md:mr-2 float-right">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="assets/aboutus-1.jpg" class="d-block w-100" alt="Image 1" /></div>
+          <div class="swiper-slide"><img src="assets/aboutus-2.jpg" class="d-block w-100" alt="Image 2" /></div>
+          <div class="swiper-slide"><img src="assets/aboutus-3.jpg" class="d-block w-100" alt="Image 3" /></div>
+          <div class="swiper-slide"><img src="assets/aboutus-4.jpg" class="d-block w-100" alt="Image 4" /></div>
+          <div class="swiper-slide"><img src="assets/aboutus-5.jpg" class="d-block w-100" alt="Image 5" /></div>
+          ...
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
     </div>
   </div>
 
@@ -119,16 +118,14 @@
         <!-- 1st slide -->
         <div class="carousel-item py-5 md:py-20 active bg-slate-400 shadow-lg rounded-lg overflow-hidden">
           <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
-            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh minh">
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh">
               <img src="assets/Ps1.jpg" alt="Image 1" class="carousel-image" />
             </div>
             <div class="carousel-text">
               <h2 class="text-4xl font-bold mb-2">0.75 to 1.25 inch</h2>
               <h3 class="text-2xl font-bold mb-2">17 to 30 mm</h3>
               <p class="text-gray-700">
-                Description about Image 1. This is a placeholder text for the
-                image description. It should provide some context about the
-                image.
+                Home flooring, Office spaces, Staircases, Parking areas, etc.
               </p>
             </div>
           </div>
@@ -137,16 +134,14 @@
         <!-- 2nd slide -->
         <div class="carousel-item py-5 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden">
           <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
-            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh minh">
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh">
               <img src="assets/Ps2.jpg" alt="Image 2" class="carousel-image" />
             </div>
             <div class="carousel-text">
               <h2 class="text-4xl font-bold mb-2">1.25 to 1.50 inch</h2>
               <h3 class="text-2xl font-bold mb-2">31 to 37 mm</h3>
               <p class="text-gray-700">
-                Description about Image 2. This is a placeholder text for the
-                image description. It should provide some context about the
-                image.
+                Industrial flooring, Manufacturing units, Driveways, Outdoor public spaces, etc.
               </p>
             </div>
           </div>
@@ -155,16 +150,14 @@
         <!-- 3rd slide -->
         <div class="carousel-item py-5 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden">
           <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
-            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh minh">
-              <img src="assets/Ps3.jpg" alt="Image 3" class="carousel-image" />
+            <div class="flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh">
+              <img id="Ps3" src="assets/Ps3.jpg" alt="Image 3" class="carousel-image" />
             </div>
             <div class="carousel-text">
               <h2 class="text-4xl font-bold mb-2">0.50 to 0.75 inch</h2>
               <h3 class="text-2xl font-bold mb-2">12 to 17 mm</h3>
               <p class="text-gray-700">
-                Description about Image 3. This is a placeholder text for the
-                image description. It should provide some context about the
-                image.
+                Bathroom walls, Walkways, Verandas, Wall cladding, etc.
               </p>
             </div>
           </div>
@@ -253,8 +246,8 @@
     <div class="heading text-center text-4xl md:text-6xl">Contact Us</div>
     <div class="form mt-8">
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScKcUOvtopaStzVSl_SccDiFJ-FVzpq9FkYDRPGWg2mX1mW1A/viewform?embedded=true"
-        width="640" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfC804MVqzVOAHpoDtN0P8794GsgAhhZWsM7H6Gte6yfMoIBQ/viewform?embedded=true"
+        width="640" height="1280" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
     </div>
 
   </div>
@@ -269,15 +262,17 @@
           <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">+91 9829039939</a></li>
         </ul>
       </div>
-      
+
       <div class="col mb-3">
         <h5>Email</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">shivanshmalpani@gmail.com</a></li>
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">rajivmalpani@hotmail.com</a></li>
+          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">shivanshmalpani@gmail.com</a>
+          </li>
+          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">rajivmalpani@hotmail.com</a>
+          </li>
         </ul>
       </div>
-      
+
       <div class="col mb-3">
         <h5>Location</h5>
         <ul class="nav flex-column">
@@ -289,12 +284,15 @@
       <div class="col mb-3">
         <h5>Instagram</h5>
         <ul class="nav flex-column">
-          <li class="nav-item mb-1"><a href="#" class="nav-link p-0 text-body-secondary">@great_india_kotastone</a></li>
+          <li class="nav-item mb-1"><a href="https://www.instagram.com/great_india_kotastone/" target="_blank"
+              class="nav-link p-0 text-body-secondary">@great_india_kotastone</a></li>
         </ul>
       </div>
     </footer>
   </div>
 
+  <!-- Swiper Js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
   <!-- Bootstrap Js  -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -329,6 +327,27 @@
         navMenu.classList.remove('navmenu-hide');
       }
       lastScrollTop = scrollTop;
+    });
+
+    // Swiper
+    const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      direction: 'horizontal',
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      slidesPerView: 1,
+      spaceBetween: 5,
+      loop: true,
+      slidesPerGroup: 1,
+
+      autoplay: {
+        delay: 3000,
+      },
     });
   </script>
 </body>
