@@ -119,6 +119,25 @@ body {
   .hero {
     height: 50vh;
   }
+
+  .content{
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .text{
+    width: 90vw;
+    height: 65vh;
+    padding: none;
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+
+  .swiper{
+    width: 90vw;
+    height: 35vh;
+  }
+
 }
 
 .carousel-image {
@@ -131,6 +150,19 @@ body {
   border-radius: 10px;
 }
 
+#P .carouselImage{
+  width: 23vw;
+}
+
+#P .carousel-text{
+  width: 77vw;
+}
+
+@media (max-width: 768px) {
+  .carousel-text {
+    height: 20vh;
+  }
+}
 /* .maxh {
   width: 50%;
 } */
@@ -174,7 +206,13 @@ body {
 
 @media (max-width: 600px) {
   .view {
-    grid-template-columns: 1fr;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  .card {
+    max-width: 248px;
+    width: 100%;
   }
 }
 
