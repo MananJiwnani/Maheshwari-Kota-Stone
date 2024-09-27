@@ -115,11 +115,14 @@ body {
 .carousel-inner {
   border-radius: 10px;
 }
-
+@media (max-width: 900px){
+  .swiper-slide img{
+    max-height: 240.75px;
+  }
+}
 @media (max-width: 768px) {
   #AU {
-    padding-top: 100px;
-    width:80vw;
+    width:100vw;
   }
 
   .carousel-inner img {
@@ -170,6 +173,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  #P{
+    padding-top: none;
+  }
   .carousel-text {
     height: 20vh;
   }
@@ -335,4 +341,25 @@ h5 {
 .nav-item {
   font-size: 13px;
   margin-bottom: 7px;
+}
+
+.form{
+  display: flex;
+  width: 95%;
+  align-items: center;
+}
+.gform{
+  width: 100%;
+}
+
+@media only screen and (max-width: 628px){
+  .gform{
+    height: 1350px;
+  }
+}
+
+@media only screen and (max-width: 452px){
+  .gform{
+    height: 1500px;
+  }
 }
