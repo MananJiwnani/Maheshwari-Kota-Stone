@@ -13,6 +13,7 @@ body {
   background-size: 1000px;
   overflow-x: hidden;
 }
+
 /* Navbar */
 .navbutton {
   color: white;
@@ -37,6 +38,7 @@ body {
   height: 40px;
   border-radius: 5px;
 }
+
 /* NavMenu */
 .navmenu {
   transition: transform 0.3s ease-in-out;
@@ -78,6 +80,7 @@ body {
   height: 370px;
   overflow-y: hidden;
 }
+
 /* About Us section */
 #AU {
   min-height: 80vh;
@@ -115,14 +118,16 @@ body {
 .carousel-inner {
   border-radius: 10px;
 }
-@media (max-width: 900px){
-  .swiper-slide img{
+
+@media (max-width: 900px) {
+  .swiper-slide img {
     max-height: 240.75px;
   }
 }
+
 @media (max-width: 768px) {
   #AU {
-    width:100vw;
+    width: 100vw;
   }
 
   .carousel-inner img {
@@ -158,6 +163,7 @@ body {
   width: 100%;
   height: auto;
 }
+
 /* Product Section */
 #P {
   scroll-margin-top: 150px;
@@ -173,9 +179,10 @@ body {
 }
 
 @media (max-width: 768px) {
-  #P{
+  #P {
     padding-top: none;
   }
+
   .carousel-text {
     height: 20vh;
   }
@@ -316,16 +323,27 @@ body {
   #contact {
     width: 18vw;
   }
-  #location{
-    width: 24vw;;
+
+  #location {
+    width: 24vw;
+    ;
   }
-  #email{
+
+  #email {
     width: 20vw;
   }
 }
 
 footer {
-  width: 96vw;
+  width: 93vw;
+  padding-right: 3vw;
+}
+
+@media (max-width: 992px){
+  footer {
+    width: 88vw;
+    padding-right: 2vw;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -343,129 +361,197 @@ h5 {
   margin-bottom: 7px;
 }
 
-.form{
+.form {
   display: flex;
   width: 95%;
   align-items: center;
 }
-.gform{
+
+.gform {
   width: 100%;
 }
 
-@media only screen and (max-width: 628px){
-  .gform{
+@media only screen and (max-width: 628px) {
+  .gform {
     height: 1350px;
   }
 
 }
 
-@media only screen and (max-width: 452px){
-  .gform{
+@media only screen and (max-width: 452px) {
+  .gform {
     height: 1500px;
   }
 }
 
 /* NavBar */
-.navbar-icons{
+.navbar-icons {
   gap: 1.5rem;
 }
 
-@media (max-width: 620px){
-  .navbar-icons{
+@media (max-width: 620px) {
+  .navbar-icons {
     gap: 10px;
   }
 }
 
-@media (max-width: 576px){
-  .name{
-    font-size: 20px;
+@media (max-width:960px) {
+  .name {
+    font-size: 28px;
   }
-  .logo img{
+  .logo img {
     height: 32px;
     width: 32px;
     margin-left: 4px;
     margin-right: none;
   }
+}
 
-  .instagram img{
+@media (max-width: 768px) {
+  .navBar {
+    margin-right: 14px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .logo img {
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+    margin-right: none;
+  }
+
+  .main{
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .name {
+    font-size: 20px;
+  }
+
+  .logo img {
+    height: 28px;
+    width: 28px;
+    margin-left: 4px;
+    margin-right: none;
+  }
+
+  .instagram img {
     height: 18px;
-  } 
+  }
 
-  .nav-icons{
+  .nav-icons {
     width: 20px;
     height: 20px;
   }
-  .instagram{
+
+  .instagram {
     margin-right: 2px;
   }
 }
 
-@media (max-width: 460px){
-  .name{
+nav {
+  padding: 0 4vw;
+}
+
+@media (max-width: 460px) {
+  .name {
     font-size: 18px;
   }
-  .logo img{
-    height: 32px;
-    width: 32px;
+
+  .logo img {
+    height: 24px;
+    width: 24px;
     margin-left: 3px;
     margin-right: none;
   }
 
-  .navbar-icons{
-    gap: 7px;
+  .main{
+    gap: 0;
   }
 
-  .nav-icons{
-    width: 20px;
-    height: 20px;
+  .navbar-icons {
+    gap: 5px;
   }
-  .instagram{
+
+  .nav-icons {
+    width: 16px;
+    height: 16px;
+  }
+
+  .instagram {
     margin-right: 2px;
   }
-  
-  .instagram img{
-    height: 18px;
+
+  .instagram img {
+    height: 14px;
+  }
+
+  nav{
+    padding: 0 2vw;
   }
 }
 
 /* NavMenu */
-@media (max-width: 560px){
-  .hover a{
+.hover{
+  font-size: 18px;
+}
+
+@media (max-width: 768px){
+  .hover{
+    font-size: 15px;
+  }
+  
+}
+
+@media (max-width: 560px) {
+  .hover a {
     font-size: 14px;
   }
 }
 
-@media (max-width: 450px){
-  .hover a{
+@media (max-width: 460px) {
+  .hover a {
     font-size: 12px;
   }
 }
 
-@media (max-width: 768px) and (min-width: 500px){
-  .nav-icons{
+@media (max-width: 768px) and (min-width: 500px) {
+  .nav-icons {
     top: 2px;
   }
-  
-  .instagram{
+
+  .instagram {
     top: 3px;
   }
-  .instagram img{
+
+  .instagram img {
     height: 24px;
   }
 }
 
-nav{
-  padding:0 4vw;
-}
-
-@media (max-width: 768px){
-  .navBar{
-    margin-right: 14px;
+@media (max-width: 768px) and (min-width: 576px) {
+  .mail{
+    top: 1px;
   }
 }
 
-@media (max-width: 576px) and (min-width: 500px){
-  .instagram{
-    top: 0px;
+@media (max-width: 576px) and (min-width: 500px) {
+  .instagram {
+    top: 3px;
+  }
+  .instagram img {
+    height: 18px;
   }
 }
+
+@media (max-width: 500px){
+  .mail{
+    bottom: 1px;
+  }
+}
+
