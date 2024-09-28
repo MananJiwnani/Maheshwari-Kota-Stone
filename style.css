@@ -4,10 +4,6 @@
   font-family: "Inter", sans-serif;
 }
 
-/* .trapezium {
-  clip-path: polygon(5% 100%, 100% 100%, 100% 0, 0 0);
-} */
-
 body {
   background-image: url(assets/white-simple-textured-design-background.jpg);
   background-size: 1000px;
@@ -39,6 +35,117 @@ body {
   border-radius: 5px;
 }
 
+.navbar-icons {
+  gap: 1.5rem;
+}
+
+@media (max-width: 620px) {
+  .navbar-icons {
+    gap: 10px;
+  }
+}
+
+@media (max-width:960px) {
+  .name {
+    font-size: 28px;
+  }
+  .logo img {
+    height: 32px;
+    width: 32px;
+    margin-left: 4px;
+    margin-right: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navBar {
+    margin-right: 14px;
+  }
+
+  .name {
+    font-size: 22px;
+  }
+
+  .logo img {
+    height: 30px;
+    width: 30px;
+    margin-left: 4px;
+    margin-right: none;
+  }
+
+  .main{
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .name {
+    font-size: 20px;
+  }
+
+  .logo img {
+    height: 28px;
+    width: 28px;
+    margin-left: 4px;
+    margin-right: none;
+  }
+
+  .instagram img {
+    height: 18px;
+  }
+
+  .nav-icons {
+    width: 20px;
+    height: 20px;
+  }
+
+  .instagram {
+    margin-right: 2px;
+  }
+}
+
+nav {
+  padding: 0 4vw;
+}
+
+@media (max-width: 460px) {
+  .name {
+    font-size: 18px;
+  }
+
+  .logo img {
+    height: 24px;
+    width: 24px;
+    margin-left: 3px;
+    margin-right: none;
+  }
+
+  .main{
+    gap: 0;
+  }
+
+  .navbar-icons {
+    gap: 5px;
+  }
+
+  .nav-icons {
+    width: 16px;
+    height: 16px;
+  }
+
+  .instagram {
+    margin-right: 2px;
+  }
+
+  .instagram img {
+    height: 14px;
+  }
+
+  nav{
+    padding: 0 2vw;
+  }
+}
+
 /* NavMenu */
 .navmenu {
   transition: transform 0.3s ease-in-out;
@@ -48,6 +155,64 @@ body {
 .navmenu-hide {
   transform: translateY(-100%);
   /* Adjust as needed to hide the menu */
+}
+
+.hover{
+  font-size: 18px;
+}
+
+@media (max-width: 768px){
+  .hover{
+    font-size: 15px;
+  }
+  
+}
+
+@media (max-width: 560px) {
+  .hover a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 460px) {
+  .hover a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 500px) {
+  .nav-icons {
+    top: 2px;
+  }
+
+  .instagram {
+    top: 3px;
+  }
+
+  .instagram img {
+    height: 24px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 576px) {
+  .mail{
+    top: 1px;
+  }
+}
+
+@media (max-width: 576px) and (min-width: 500px) {
+  .instagram {
+    top: 3px;
+  }
+  .instagram img {
+    height: 18px;
+  }
+}
+
+@media (max-width: 500px){
+  .mail{
+    bottom: 1px;
+  }
 }
 
 /* Heroes section */
@@ -188,10 +353,6 @@ body {
   }
 }
 
-/* .maxh {
-  width: 50%;
-} */
-
 .maxh img {
   border-radius: 5px;
   height: 310px;
@@ -314,11 +475,12 @@ body {
   vertical-align: middle;
 }
 
+/* Write To Us Section */
 
 #WTU{
   scroll-margin-top: 125px;
 }
-
+/* Footer Section */
 .footer-column {
   width: 22vw;
 }
@@ -376,6 +538,11 @@ h5 {
   width: 100%;
 }
 
+.copyright{
+  text-align: center;
+  font-weight: 250;
+}
+
 @media only screen and (max-width: 628px) {
   .gform {
     height: 1350px;
@@ -389,174 +556,5 @@ h5 {
   }
 }
 
-/* NavBar */
-.navbar-icons {
-  gap: 1.5rem;
-}
 
-@media (max-width: 620px) {
-  .navbar-icons {
-    gap: 10px;
-  }
-}
-
-@media (max-width:960px) {
-  .name {
-    font-size: 28px;
-  }
-  .logo img {
-    height: 32px;
-    width: 32px;
-    margin-left: 4px;
-    margin-right: none;
-  }
-}
-
-@media (max-width: 768px) {
-  .navBar {
-    margin-right: 14px;
-  }
-
-  .name {
-    font-size: 22px;
-  }
-
-  .logo img {
-    height: 30px;
-    width: 30px;
-    margin-left: 4px;
-    margin-right: none;
-  }
-
-  .main{
-    gap: 0.5rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .name {
-    font-size: 20px;
-  }
-
-  .logo img {
-    height: 28px;
-    width: 28px;
-    margin-left: 4px;
-    margin-right: none;
-  }
-
-  .instagram img {
-    height: 18px;
-  }
-
-  .nav-icons {
-    width: 20px;
-    height: 20px;
-  }
-
-  .instagram {
-    margin-right: 2px;
-  }
-}
-
-nav {
-  padding: 0 4vw;
-}
-
-@media (max-width: 460px) {
-  .name {
-    font-size: 18px;
-  }
-
-  .logo img {
-    height: 24px;
-    width: 24px;
-    margin-left: 3px;
-    margin-right: none;
-  }
-
-  .main{
-    gap: 0;
-  }
-
-  .navbar-icons {
-    gap: 5px;
-  }
-
-  .nav-icons {
-    width: 16px;
-    height: 16px;
-  }
-
-  .instagram {
-    margin-right: 2px;
-  }
-
-  .instagram img {
-    height: 14px;
-  }
-
-  nav{
-    padding: 0 2vw;
-  }
-}
-
-/* NavMenu */
-.hover{
-  font-size: 18px;
-}
-
-@media (max-width: 768px){
-  .hover{
-    font-size: 15px;
-  }
-  
-}
-
-@media (max-width: 560px) {
-  .hover a {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 460px) {
-  .hover a {
-    font-size: 12px;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 500px) {
-  .nav-icons {
-    top: 2px;
-  }
-
-  .instagram {
-    top: 3px;
-  }
-
-  .instagram img {
-    height: 24px;
-  }
-}
-
-@media (max-width: 768px) and (min-width: 576px) {
-  .mail{
-    top: 1px;
-  }
-}
-
-@media (max-width: 576px) and (min-width: 500px) {
-  .instagram {
-    top: 3px;
-  }
-  .instagram img {
-    height: 18px;
-  }
-}
-
-@media (max-width: 500px){
-  .mail{
-    bottom: 1px;
-  }
-}
 
