@@ -248,7 +248,7 @@ nav {
 
 /* About Us section */
 #AU {
-  min-height: 80vh;
+  height: 600px;
   padding-top: 150px;
   scroll-margin-top: 130px;
 }
@@ -290,18 +290,15 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   #AU {
     width: 100vw;
+    height: 850px;
   }
 
   .carousel-inner img {
     width: 100%;
     height: auto;
-  }
-
-  .hero {
-    height: 50vh;
   }
 
   .content {
@@ -319,9 +316,59 @@ nav {
 
   .swiper {
     width: 90vw;
-    height: 35vh;
+    height: 300px;
   }
+  .swiper img{
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-height: 350px;
+  }
+  
+}
 
+@media (max-width: 1200px) and (min-width: 768px){
+  .swiper{
+    height: 420px;
+  }
+  .swiper img{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 620px){
+  #AU{
+    height: 900px;
+  }
+}
+@media (max-width: 552px){
+  #AU{
+    height: 950px;
+  }
+}
+@media (max-width: 445px){
+  #AU{
+    height: 1050px;
+  }
+}
+@media (max-width: 410px){
+  #AU{
+    height: 1100px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 510px){
+  .swiper{
+    height: 340px;
+  }
+  .swiper img{
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+    max-height: 350px;
+  }
 }
 
 .carousel-image {
@@ -547,14 +594,10 @@ h5 {
   .gform {
     height: 1350px;
   }
-
 }
 
 @media only screen and (max-width: 452px) {
   .gform {
-    height: 1500px;
+    height: 1520px;
   }
 }
-
-
-
