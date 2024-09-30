@@ -340,22 +340,28 @@ nav {
 
 @media (max-width: 620px){
   #AU{
-    height: 900px;
+    height: 840px;
+  }
+  .text{
+    font-size: 16px;
   }
 }
 @media (max-width: 552px){
   #AU{
-    height: 950px;
+    height: 900px;
   }
 }
 @media (max-width: 445px){
   #AU{
-    height: 1050px;
+    height: 900px;
+  }
+  .text{
+    font-size: 14px;
   }
 }
 @media (max-width: 410px){
   #AU{
-    height: 1100px;
+    height: 950px;
   }
 }
 
