@@ -399,6 +399,11 @@ nav {
     height: 20vh;
   }
 }
+@media (max-width:450px){
+  .carousel-text h2{
+    font-size: 1.8rem;
+  }
+}
 
 .maxh img {
   border-radius: 5px;
