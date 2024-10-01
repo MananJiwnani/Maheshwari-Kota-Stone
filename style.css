@@ -531,6 +531,22 @@ nav {
   vertical-align: middle;
 }
 
+.notice{
+  display: flex;
+  justify-content: center;
+}
+
+.notice h4{
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+@media (max-width: 500px){
+  .notice h4{
+    font-size: larger;
+  }
+}
+
 /* Write To Us Section */
 
 #WTU{
