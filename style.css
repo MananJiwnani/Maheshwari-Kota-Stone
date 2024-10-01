@@ -248,7 +248,7 @@ nav {
 
 /* About Us section */
 #AU {
-  min-height: 80vh;
+  height: 600px;
   padding-top: 150px;
   scroll-margin-top: 130px;
 }
@@ -290,19 +290,15 @@ nav {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1120px) {
   #AU {
     width: 100vw;
+    height: 850px;
   }
-  
 
   .carousel-inner img {
     width: 100%;
     height: auto;
-  }
-
-  .hero {
-    height: 50vh;
   }
 
   .content {
@@ -320,7 +316,13 @@ nav {
 
   .swiper {
     width: 90vw;
-    height: 35vh;
+    height: 300px;
+  }
+  .swiper img{
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-height: 350px;
   }
   
 }
@@ -538,12 +540,12 @@ nav {
 
 .notice h4{
   font-weight: 600;
-  text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
 }
 
 @media (max-width: 500px){
   .notice h4{
-    font-size: larger;
+    font-size: medium;
   }
 }
 
