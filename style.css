@@ -322,7 +322,57 @@ nav {
     width: 90vw;
     height: 35vh;
   }
+  
+}
 
+@media (max-width: 1200px) and (min-width: 768px){
+  .swiper{
+    height: 420px;
+  }
+  .swiper img{
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+  }
+}
+
+@media (max-width: 620px){
+  #AU{
+    height: 840px;
+  }
+  .text{
+    font-size: 16px;
+  }
+}
+@media (max-width: 552px){
+  #AU{
+    height: 900px;
+  }
+}
+@media (max-width: 445px){
+  #AU{
+    height: 900px;
+  }
+  .text{
+    font-size: 14px;
+  }
+}
+@media (max-width: 410px){
+  #AU{
+    height: 950px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 510px){
+  .swiper{
+    height: 340px;
+  }
+  .swiper img{
+    width: 100%;
+    height: auto;
+    min-height: 340px;
+    max-height: 350px;
+  }
 }
 
 .carousel-image {
@@ -351,6 +401,11 @@ nav {
 
   .carousel-text {
     height: 20vh;
+  }
+}
+@media (max-width:450px){
+  .carousel-text h2{
+    font-size: 1.8rem;
   }
 }
 
