@@ -217,7 +217,7 @@ nav {
 
 /* Heroes section */
 .hero {
-  background-image: url(/assets/Hero-bg-1.jpg);
+  background-image: url(assets/Hero-bg-1.jpg);
   height: 100vh;
   background-size: cover;
   background-position: center;
