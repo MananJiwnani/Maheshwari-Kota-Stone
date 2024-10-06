@@ -54,7 +54,7 @@ nav {
 
 .navmenu {
   display: flex;
-  gap: 100px;
+  gap: 80px;
 }
 
 .navbutton {
