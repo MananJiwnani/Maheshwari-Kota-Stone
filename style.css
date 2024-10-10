@@ -193,6 +193,8 @@ nav {
 
   .navmenu {
     gap: 30px;
+    height: 30px;
+    align-items: center;
   }
 
   .navbutton {
@@ -342,10 +344,10 @@ nav {
     height: 900px;
   }
 }
-@media (max-width: 445px){
+@media (max-width: 460px){
   #AU{
     height: 850px;
-    margin-top:75px;
+    margin-top:65px;
   }
   .text{
     font-size: 14px;
