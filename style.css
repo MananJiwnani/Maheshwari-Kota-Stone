@@ -64,9 +64,19 @@ nav {
   font-weight: 500;
 }
 
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+}
+
 @media (max-width: 960px) {
   .name {
     font-size: 32px;
+  }
+
+  .heading{
+    font-size: 42px;
   }
 
   .logo img {
@@ -86,6 +96,9 @@ nav {
 
   .name {
     font-size: 28px;
+  }
+  .heading{
+    font-size: 38px;
   }
 
   .logo img {
@@ -117,10 +130,6 @@ nav {
 }
 
 @media (max-width: 576px) {
-  nav {
-    padding: 0 3vw;
-  }
-
   .logo img {
     height: 28px;
     width: 28px;
@@ -154,10 +163,6 @@ nav {
 }
 
 @media (max-width: 460px) {
-  nav {
-    padding: 0 3vw;
-  }
-
   .navbar-icons {
     gap: 0.3rem;
   }
@@ -174,6 +179,9 @@ nav {
 
   .name {
     font-size: 20px;
+  }
+  .heading{
+    font-size: 36px;
   }
 
   .navmenu {
@@ -208,12 +216,6 @@ nav {
   font-family: "Headland One", serif;
 }
 
-.heading {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 50px;
-}
-
 .subheading {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -231,7 +233,8 @@ nav {
 #AU {
   height: 600px;
   padding-top: 150px;
-  scroll-margin-top: 130px;
+  scroll-margin-top: 120px;
+  margin-top: 120px;
 }
 
 .carousel-text {
@@ -274,7 +277,7 @@ nav {
 @media (max-width: 1120px) {
   #AU {
     width: 100vw;
-    height: 850px;
+    height: 840px;
   }
 
   .carousel-inner img {
@@ -334,15 +337,16 @@ nav {
 }
 @media (max-width: 445px){
   #AU{
-    height: 900px;
+    height: 850px;
   }
   .text{
     font-size: 14px;
+    line-height: 25px;
   }
 }
 @media (max-width: 410px){
   #AU{
-    height: 950px;
+    height: 850px;
   }
 }
 
