@@ -285,7 +285,7 @@ nav {
 
 @media (max-width: 1120px) {
   #AU {
-    width: 100vw;
+    /* width: 100vw; */
     height: 840px;
   }
 
