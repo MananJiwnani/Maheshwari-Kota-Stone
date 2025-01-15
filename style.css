@@ -19,7 +19,7 @@ body {
 
 /* Navbar*/
 nav {
-  padding: 0 4vw;
+  padding: 0 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@ nav {
 }
 
 .navbar-icons {
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 .nav-icons {
@@ -54,7 +54,7 @@ nav {
 
 .navmenu {
   display: flex;
-  gap: 70px;
+  gap: 80px;
 }
 
 .navbutton {
@@ -64,9 +64,19 @@ nav {
   font-weight: 500;
 }
 
+.heading {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+}
+
 @media (max-width: 960px) {
   .name {
-    font-size: 28px;
+    font-size: 32px;
+  }
+
+  .heading{
+    font-size: 42px;
   }
 
   .logo img {
@@ -81,11 +91,14 @@ nav {
 
 @media (max-width: 768px) {
   nav {
-    padding: 0 2vw;
+    padding: 0 4vw;
   }
 
   .name {
-    font-size: 22px;
+    font-size: 28px;
+  }
+  .heading{
+    font-size: 38px;
   }
 
   .logo img {
@@ -95,6 +108,15 @@ nav {
 
   .navbar-icons {
     gap: 0.5rem;
+  }
+  .nav-icons {
+    width: 28px;
+    height: 28px;
+  }
+
+  .nav-icons img {
+    width: 14px;
+    height: 14px;
   }
 
 
@@ -108,10 +130,6 @@ nav {
 }
 
 @media (max-width: 576px) {
-  nav {
-    padding: 0 1vw;
-  }
-
   .logo img {
     height: 28px;
     width: 28px;
@@ -122,8 +140,8 @@ nav {
   }
 
   .nav-icons {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
   }
 
   .nav-icons img {
@@ -132,11 +150,51 @@ nav {
   }
 
   .name {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .navmenu {
     gap: 30px;
+  }
+
+  .navbutton {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 460px) {
+  .navbar-icons {
+    gap: 0.3rem;
+    display: none;
+  }
+
+  nav{
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 60px;
+  }
+
+  .nav-icons {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-icons img {
+    width: 9px;
+    height: 9px;
+  }
+
+  .name {
+    font-size: 23px;
+  }
+  .heading{
+    font-size: 36px;
+  }
+
+  .navmenu {
+    gap: 30px;
+    height: 30px;
+    align-items: center;
   }
 
   .navbutton {
@@ -167,12 +225,6 @@ nav {
   font-family: "Headland One", serif;
 }
 
-.heading {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  font-size: 50px;
-}
-
 .subheading {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
@@ -190,7 +242,8 @@ nav {
 #AU {
   height: 600px;
   padding-top: 150px;
-  scroll-margin-top: 130px;
+  scroll-margin-top: 120px;
+  margin-top: 120px;
 }
 
 .carousel-text {
@@ -232,8 +285,8 @@ nav {
 
 @media (max-width: 1120px) {
   #AU {
-    width: 100vw;
-    height: 850px;
+    /* width: 100vw; */
+    height: 840px;
   }
 
   .carousel-inner img {
@@ -291,17 +344,19 @@ nav {
     height: 900px;
   }
 }
-@media (max-width: 445px){
+@media (max-width: 460px){
   #AU{
-    height: 900px;
+    height: 850px;
+    margin-top:65px;
   }
   .text{
     font-size: 14px;
+    line-height: 25px;
   }
 }
 @media (max-width: 410px){
   #AU{
-    height: 950px;
+    height: 850px;
   }
 }
 
