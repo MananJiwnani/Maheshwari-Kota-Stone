@@ -2,13 +2,17 @@
 
 * {
   font-family: "Inter", sans-serif;
-  box-sizing: border-box; /* Ensure padding and borders are included in element's width */
+  box-sizing: border-box;
+  /* Ensure padding and borders are included in element's width */
 }
 
-html, body {
+html,
+body {
   width: 100%;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  margin: 0; /* Remove any default margin */
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  margin: 0;
+  /* Remove any default margin */
   padding: 0;
 }
 
@@ -40,7 +44,7 @@ nav {
 .nav-icons {
   width: 35px;
   height: 35px;
-  border: 0.5px, solid ,white;
+  border: 0.5px, solid, white;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -75,7 +79,7 @@ nav {
     font-size: 32px;
   }
 
-  .heading{
+  .heading {
     font-size: 42px;
   }
 
@@ -97,7 +101,8 @@ nav {
   .name {
     font-size: 28px;
   }
-  .heading{
+
+  .heading {
     font-size: 38px;
   }
 
@@ -109,6 +114,7 @@ nav {
   .navbar-icons {
     gap: 0.5rem;
   }
+
   .nav-icons {
     width: 28px;
     height: 28px;
@@ -168,7 +174,7 @@ nav {
     display: none;
   }
 
-  nav{
+  nav {
     flex-direction: column-reverse;
     justify-content: center;
     height: 60px;
@@ -187,7 +193,8 @@ nav {
   .name {
     font-size: 23px;
   }
-  .heading{
+
+  .heading {
     font-size: 36px;
   }
 
@@ -205,7 +212,7 @@ nav {
 .navmenu {
   transition: transform 0.3s ease-in-out;
   z-index: -10;
-  
+
 }
 
 .navmenu-hide {
@@ -311,60 +318,68 @@ nav {
     width: 90vw;
     height: 300px;
   }
-  .swiper img{
+
+  .swiper img {
     width: 100%;
     height: auto;
     min-height: 300px;
     max-height: 350px;
   }
-  
+
 }
 
-@media (max-width: 1200px) and (min-width: 768px){
-  .swiper{
+@media (max-width: 1200px) and (min-width: 768px) {
+  .swiper {
     height: 420px;
   }
-  .swiper img{
+
+  .swiper img {
     width: 100%;
     height: auto;
     min-height: 400px;
   }
 }
 
-@media (max-width: 620px){
-  #AU{
+@media (max-width: 620px) {
+  #AU {
     height: 840px;
   }
-  .text{
+
+  .text {
     font-size: 16px;
   }
 }
-@media (max-width: 552px){
-  #AU{
+
+@media (max-width: 552px) {
+  #AU {
     height: 900px;
   }
 }
-@media (max-width: 460px){
-  #AU{
+
+@media (max-width: 460px) {
+  #AU {
     height: 850px;
-    margin-top:65px;
+    margin-top: 65px;
   }
-  .text{
+
+  .text {
     font-size: 14px;
     line-height: 25px;
   }
 }
-@media (max-width: 410px){
-  #AU{
+
+@media (max-width: 410px) {
+  #AU {
     height: 850px;
   }
 }
 
-@media (max-width: 768px) and (min-width: 510px){
-  .swiper{
+@media (max-width: 768px) and (min-width: 510px) {
+  .swiper {
     height: 340px;
   }
-  .swiper img{
+
+  .swiper img {
     width: 100%;
     height: auto;
     min-height: 340px;
@@ -400,8 +415,9 @@ nav {
     height: 20vh;
   }
 }
-@media (max-width:450px){
-  .carousel-text h2{
+
+@media (max-width:450px) {
+  .carousel-text h2 {
     font-size: 1.8rem;
   }
 }
@@ -528,32 +544,57 @@ nav {
   vertical-align: middle;
 }
 
-.notice{
+.notice {
   display: flex;
   justify-content: center;
 }
 
-.notice h4{
+.notice h4 {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
 }
 
-@media (max-width: 500px){
-  .notice h4{
+@media (max-width: 500px) {
+  .notice h4 {
     font-size: medium;
   }
 }
 
 /* Write To Us Section */
 
-#WTU{
+#WTU {
   scroll-margin-top: 125px;
 }
+
 /* Footer Section */
 .footer-column {
   width: 22vw;
 }
 
+.form-container {
+  border-radius: 2rem;
+  box-shadow: -1px 5px 10px 0px rgb(188, 188, 188);
+}
+
+.form-detail {
+  row-gap: 2rem !important;
+}
+
+.contact-box {
+  margin-left: 62%;
+  height: max-content;
+  padding: 0rem 4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-box {
+    position: relative;
+    margin: auto;
+    margin-top: -3rem !important;
+    /* width: 76%; */
+    border-radius: 2rem;
+  }
+}
 
 @media only screen and (min-width: 991px) {
   #contact {
@@ -575,7 +616,7 @@ footer {
   padding-right: 3vw;
 }
 
-@media (max-width: 992px){
+@media (max-width: 992px) {
   footer {
     width: 88vw;
     padding-right: 2vw;
@@ -596,34 +637,3 @@ h5 {
   font-size: 13px;
   margin-bottom: 7px;
 }
-
-.form {
-  display: flex;
-  width: 95%;
-  align-items: center;
-}
-
-.gform {
-  width: 100%;
-}
-
-.copyright{
-  text-align: center;
-  font-weight: 250;
-}
-
-@media only screen and (max-width: 628px) {
-  .gform {
-    height: 1350px;
-  }
-
-}
-
-@media only screen and (max-width: 452px) {
-  .gform {
-    height: 1500px;
-  }
-}
-
-
-
