@@ -481,6 +481,13 @@ nav {
   transition: inset 0.3s ease-out;
 }
 
+@media (max-width: 600px) {
+  .view .card:hover h2 {
+    inset: auto auto 100px 30px;
+    transition: inset 0.3s ease-out;
+  }
+}
+
 .view .card:hover p,
 .view .card:hover a {
   opacity: 1;
@@ -824,6 +831,10 @@ textarea.input {
 
   .social-media {
     padding: 1.5rem 0 0 0;
+  }
+
+  .information i{
+    margin-right: 20px;
   }
 }
 
