@@ -577,6 +577,12 @@ h5 {
   justify-content: center;
 }
 
+@media (max-width:600px) {
+  .container1{
+    padding: 2rem 1rem;
+  }
+}
+
 .form {
   width: 100%;
   max-width: 940px;
