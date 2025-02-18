@@ -12,6 +12,7 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
   <!-- Swipwer CSS Link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body class="bg-LightGray">
@@ -61,17 +62,12 @@
     </div>
   </div>
 
-  <!-- hero section -->
-  <div id="top" class="hero">
-
-  </div>
-
   <!-- About Us Section -->
   <div id="AU" class="flex flex-col p-4 mx-2 mt-6 items-center">
     <!-- <div class="heading text-center text-4xl md:text-6xl">About Us</div> -->
     <div class="content flex px-6 mt-6 text-lg lg:text-xl md:flex-row">
-      <div class="text mr-4">
-        <p class="text-justify pl-4 pt-4">
+      <div class="text mr-8">
+        <p class="text-justify pt-4">
           <b>Welcome to Great India Kota Stone</b>, your trusted partner in
           the finest Kota stone, limestone, and Mandana sandstone. With over
           <b>45 years of industry expertise</b> and
@@ -227,236 +223,175 @@
 
   </main>
 
-    <!-- Write To Us -->
-     <div id="WTU" class="flex flex-col py-6 px-2 items-center">
-       <!--  <div class="form mt-8">
-         <iframe
-          class="gform"
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfC804MVqzVOAHpoDtN0P8794GsgAhhZWsM7H6Gte6yfMoIBQ/viewform?embedded=true"
-          width="640"
-          height="1280"
-          frameborder="0"
-          marginheight="0"
-          marginwidth="0"
-          >Loading…</iframe
-        >
-      </div>
-    </div> -->
+  <!-- Write To Us -->
+  <div id="WTU" class="flex flex-col py-6 px-2 items-center">
 
-    <div class="container  mx-auto my-4 px-4 lg:px-20 bg-white">
-      <form id="contactForm">
-        <div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
-          <div class="flex">
-            <h1 class="font-bold uppercase text-5xl">Send us a <br /> message</h1>
-          </div>
-          <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
-            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text" id= "firstname" placeholder="First Name*" />
-            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text" id="lastname" placeholder="Last Name*" />
-            <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="email" id="email" placeholder="Email*" />
-                <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="tel" id="phone" placeholder="Phone*" pattern="[0-9]{10}" maxlength="10" required />
-         
-            </div>
-            <div class="my-4">
-              <textarea id = "message" placeholder="Message*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
-            </div>
-            <div class="my-2 w-1/2 lg:w-1/4">
-              <button 
-                class="uppercase text-sm font-bold tracking-wide bg-blue-900 text-white p-3 rounded-lg w-full 
-                focus:outline-none focus:shadow-outline" 
-                type="button"
-                onclick="SendMail(event)">
-                Send Message
-              </button>
+    <div class="container1">
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text1">
+            Reach out to us for customized quality Kota stone crafted to suit all your design and construction needs!
+          </p>
 
+          <div class="info">
+            <div class="information">
+              <i class="icon icon1 fas fa-map-marker-alt"></i>
+              <div class="locations flex flex-col gap-0">
+                <p><a href="https://maps.app.goo.gl/jTmXNZrQ2Fsju2FSA" target="_blank"
+                    class="nav-link p-0 text-body-secondary">Near Amarpura Chauraha, Amarpura, Ramganjmandi, Kota</a>
+                </p>
+                <p><a href="https://maps.app.goo.gl/ah33MqUxmdzu6Uaz5" target="_blank"
+                  class="nav-link p-0 text-body-secondary">Opp of Association Building, Parsa Mata Chauraha, Kudayla,
+                  Ramganjmandi, Kota</a>
+                </p>
+              </div>
+            </div>
+            <div class="information">
+              <i class="icon fas fa-envelope"></i> 
+              <div class="mails">
+                <p>srmotors@ymail.com</p>
+                <p>shivanshmalpani@gmail.com</p>
+              </div>
+            </div>
+            <div class="information">
+              <i class="icon fas fa-phone"></i>
+              <div class="mails">
+                <p>+91 9829039091</p>
+                <p>+91 9829039939</p>
+                <p>+91 9214092091</p>
+              </div>
             </div>
           </div>
-      </form>
-  
-        <div
-          class="contact-box w-full lg:-mt-96 lg:w-2/6 px-8 bg-DarkBlue rounded-2xl" style="margin-top: -31rem;">
-          <div class="flex flex-col text-white">
-            <h1 class="font-bold uppercase text-4xl my-4 text-white">Drop in our office</h1>
-  
-            <div class="flex my-4 w-2/3 lg:w-1/2">
-              <div class="flex flex-col">
-                <i class="fas fa-map-marker-alt pt-2 pr-2" />
-              </div>
-              <div class="flex flex-col">
-                <h2 class="text-2xl">Main Office</h2>
-                <p class="text-gray-400">Spain Santiago Bernabeu</p>
-              </div>
-            </div>
-            
-            <div class="flex my-4 w-full">
-              <div class="flex flex-col">
-                <i class="fas fa-phone-alt pt-2 pr-2" />
-              </div>
-              <div class="flex flex-col">
-                <h2 class="text-2xl">Contact</h2>
-                <p class="text-gray-400">+91 9829039091</p>
-                <p class="text-gray-400">+91 9829039939</p>
-                <p class="text-gray-400">+91 9214092091</p>
-              </div>
-            </div>
-            
-            <div class="flex my-4 w-2/3 lg:w-1/2">
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
               <a href="https://wa.me/+919214092091" target="_blank">
-                <div class="whatsapp nav-icons relative mx-0.5 hover">
-                  <img src="assets/whatsapp.svg" alt="WhatsApp" />
-                </div>
+                <i class="fab fa-whatsapp"></i>
+              </a>
+              <a href="https://x.com/ShivanshMalpan2" target="_blank">
+                <i class="fab fa-x-twitter"></i>
               </a>
               <a href="https://www.instagram.com/great_india_kotastone/" target="_blank">
-                <div class="instagram nav-icons hover mx-2 relative">
-                  <img src="assets/instagram.svg" alt="Instagram" />
-                </div>
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/shivansh-malpani-5a8374291/" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
           </div>
         </div>
-      </div>
-        
-    <div class="container">
-      <footer
-        class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 py-5 mt-5 mb-2 justify-between border-top"
-      >
-        <div id="contact" class="footer-column col mb-4">
-          <h5>Contact</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-1">
-              <a href="#" class="nav-link p-0 text-body-secondary"
-                >+91 9829039091</a
-              >
-            </li>
-            <li class="nav-item mb-1">
-              <a href="#" class="nav-link p-0 text-body-secondary"
-                >+91 9829039939</a
-              >
-            </li>
-            <li class="nav-item mb-1">
-              <a href="#" class="nav-link p-0 text-body-secondary"
-                >+91 9214092091</a
-              >
-            </li>
-          </ul>
-        </div> 
 
-      <div id="location" class="footer-columncol mb-4">
-        <h5>Location</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item">
-            <a href="https://maps.app.goo.gl/jTmXNZrQ2Fsju2FSA" target="_blank"
-              class="nav-link p-0 text-body-secondary">Near Amarpura Chauraha, Amarpura, Ramganjmandi, Kota</a>
-          </li>
-          <li class="nav-item">
-            <a href="https://maps.app.goo.gl/ah33MqUxmdzu6Uaz5" target="_blank"
-              class="nav-link p-0 text-body-secondary">Opp of Association Building, Parsa Mata Chauraha, Kudayla,
-              Ramganjmandi, Kota</a>
-          </li>
-        </ul>
-      </div>
+        <div class="contact-form">
 
-      <div id="email" class="footer-column col mb-4">
-        <h5>Email</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-1">
-            <a href="#" class="nav-link p-0 text-body-secondary">shivanshmalpani@gmail.com</a>
-          </li>
-          <li class="nav-item mb-1">
-            <a href="#" class="nav-link p-0 text-body-secondary">srmotors@ymail.com</a>
-          </li>
-        </ul>
+          <form action="index.html" autocomplete="off">
+            <h3 class="title pb-2">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" class="input" />
+              <label for="">Name</label>
+              <span>Name</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container">
+              <input type="text" name="location" class="input" />
+              <label for="">Delivery Location</label>
+              <span>Delivery Location</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="order" class="input"></textarea>
+              <label for="">Order Requirements</label>
+              <span>Order Requirements</span>
+            </div>
+            <input type="submit" value="Send" class="btn1" />
+          </form>
+        </div>
       </div>
-
-      <div class="footer-column col mb-4">
-        <h5>Instagram</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-1">
-            <a href="https://www.instagram.com/great_india_kotastone/" target="_blank"
-              class="nav-link p-0 text-body-secondary">@great_india_kotastone</a>
-          </li>
-        </ul>
-      </div>
-      <!-- <div class="copyright">@Copyright <script>document.write(/\d{4}/.exec(Date())[0])</script></div> -->
-    </footer>
+    </div>
   </div>
 
-  <!-- Swiper Js -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Bootstrap Js  -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
+    <!-- Swiper Js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-  <!-- Smooth Scroll Script -->
-  <script>
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener("click", function (e) {
-        e.preventDefault();
+    <!-- Bootstrap Js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
 
-        document.querySelector(this.getAttribute("href")).scrollIntoView({
-          behavior: "smooth",
+    <!-- Smooth Scroll Script -->
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
         });
       });
-    });
 
-    // Hide Navmenu Script
-    let lastScrollTop = 0;
-    const navMenu = document.getElementById("navmenu");
+      // Hide Navmenu Script
+      let lastScrollTop = 0;
+      const navMenu = document.getElementById("navmenu");
 
-    window.addEventListener("scroll", function () {
-      let scrollTop =
-        window.pageYOffset || document.documentElement.scrollTop;
-      if (scrollTop > 200) {
-        if (scrollTop > lastScrollTop) {
-          navMenu.classList.add("navmenu-hide");
+      window.addEventListener("scroll", function () {
+        let scrollTop =
+          window.pageYOffset || document.documentElement.scrollTop;
+        if (scrollTop > 200) {
+          if (scrollTop > lastScrollTop) {
+            navMenu.classList.add("navmenu-hide");
+          } else {
+            navMenu.classList.remove("navmenu-hide");
+          }
         } else {
           navMenu.classList.remove("navmenu-hide");
         }
-      } else {
-        navMenu.classList.remove("navmenu-hide");
-      }
-      lastScrollTop = scrollTop;
-    });
-
-    // Swiper
-    const swiper = new Swiper(".swiper", {
-      // Optional parameters
-      direction: "horizontal",
-
-      // Navigation arrows
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-
-      slidesPerView: 1,
-      spaceBetween: 5,
-      loop: true,
-      slidesPerGroup: 1,
-
-      autoplay: {
-        delay: 3000,
-      },
-    });
-  </script>
-
-  <!-- Email.js -->
-  <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "gAUBqrgpKv5lx5L1i",
+        lastScrollTop = scrollTop;
       });
-   })();
-</script>
-<script typr="text/javascript" src="./script.js"></script>
+
+      // Swiper
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
+        direction: "horizontal",
+
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+        slidesPerView: 1,
+        spaceBetween: 5,
+        loop: true,
+        slidesPerGroup: 1,
+
+        autoplay: {
+          delay: 3000,
+        },
+      });
+    </script>
+
+    <!-- Email.js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "gAUBqrgpKv5lx5L1i",
+        });
+      })();
+    </script>
+    <script typr="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
