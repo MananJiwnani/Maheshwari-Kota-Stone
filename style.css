@@ -258,6 +258,13 @@ nav {
   padding: 1rem;
 }
 
+@media (min-width: 1120px) {
+  #myCarousel{
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+  }
+}
+
 .text {
   width: 65%;
   padding-right: 1rem;
@@ -305,8 +312,8 @@ nav {
 
   .text {
     width: 90vw;
-    padding: none;
-    margin-left: 10px;
+    padding: 0 4px;
+    margin-left: 0px;
     margin-right: 0px;
   }
 
@@ -350,7 +357,7 @@ nav {
 
   .text {
     font-size: 14px;
-    line-height: 25px;
+    line-height: 22px;
   }
 }
 
