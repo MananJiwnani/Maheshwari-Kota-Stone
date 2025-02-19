@@ -4,19 +4,19 @@ function SendMail() {
       email: document.getElementById("email").value.trim(),
       phone: document.getElementById("phone").value.trim(),
       location: document.getElementById("location").value.trim(),
-      message: document.getElementById("order").value.trim(),
+      order: document.getElementById("order").value.trim(),
   };
 
-  if (!params.name || !params.email || !params.phone || !params.location || !params.message) {
+  if (!params.name || !params.email || !params.phone ) {
       Swal.fire({
           icon: 'error',
           title: 'Oops...',
-          text: 'Please fill all the details!',
+          text: 'Please fill all the required details!',
       });
       return;
   }
 
-  emailjs.send("service_nbdzv9n", "template_4rv15p1", params)
+  emailjs.send("service_1vq3ikl", "template_ki7tg6u", params)
   .then(function(res) {
     Swal.fire({
         icon: 'success',
