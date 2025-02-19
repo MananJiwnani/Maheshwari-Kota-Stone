@@ -385,8 +385,13 @@ nav {
   border-radius: 10px;
 }
 
+.carousel-item{
+  background-color: #8697c4;
+}
+
 #P .carouselImage {
   width: 23vw;
+  background-color: #8697c4;
 }
 
 #P .carousel-text {
@@ -596,7 +601,7 @@ h5 {
 }
 
 .contact-form {
-  background-color: #1abc9c;
+  background-color: #3d52a0;
   position: relative;
 }
 
@@ -605,7 +610,7 @@ h5 {
   position: absolute;
   width: 26px;
   height: 26px;
-  background-color: #1abc9c;
+  background-color: #3d52a0;
   transform: rotate(45deg);
   top: 50px;
   left: -13px;
@@ -672,12 +677,27 @@ textarea.input {
   transform: translateY(0);
 }
 
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    background-color: #3d52a0 !important;  /* Transparent background */
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* Prevent autofill color */
+    -webkit-text-fill-color: #fff !important; /* Text color */
+    transition: background-color 5000s ease-in-out 0s; /* Prevents flashing */
+}
+
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill:focus {
+    background-color: #3d52a0 !important; /* White background on focus */
+    -webkit-box-shadow: 0 0 0px 1000px transparent inset !important; /* Ensure white stays */
+    -webkit-text-fill-color: #fff !important;
+}
+
 .btn1 {
   padding: 0.6rem 1.3rem;
   background-color: #fff;
   border: 2px solid #fafafa;
   font-size: 0.95rem;
-  color: #1abc9c;
+  color: #3d52a0;
   line-height: 1;
   border-radius: 5px;
   outline: none;
@@ -712,7 +732,7 @@ textarea.input {
   opacity: 0;
   transition: 0.3s;
   height: 5px;
-  background-color: #1abc9c;
+  background-color: #3d52a0;
   top: 50%;
   transform: translateY(-50%);
 }
@@ -744,7 +764,7 @@ textarea.input {
 }
 
 .contact-info .title {
-  color: #1abc9c;
+  color: #3d52a0;
 }
 
 .text1 {
@@ -763,7 +783,7 @@ textarea.input {
   padding-top: 5px;
   margin-right: 25px;
   width: 5px;
-  color: #1ABC9C;
+  color: #3d52a0;
 }
 
 .icon {
@@ -801,7 +821,7 @@ textarea.input {
   width: 35px;
   height: 35px;
   border-radius: 5px;
-  background: linear-gradient(45deg, #1abc9c, #149279);
+  background: linear-gradient(45deg, #6280cd, #3d52a0);
   color: #fff;
   text-align: center;
   line-height: 35px;

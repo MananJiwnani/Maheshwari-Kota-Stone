@@ -1,22 +1,42 @@
-function SendMail(){
-    var params = {
-        name: document.getElementById("name").value,
-        email: document.getElementById("email").value,
-        phone: document.getElementById("phone").value,
-        location: document.getElementById("location").value,
-        message: document.getElementById("order").value,
-    }
-    emailjs.send("service_nbdzv9n", "template_4rv15p1", params)
-    .then(function(res){
-        alert("Success! " + res.status);
-    })
-    .catch(function(err) {
-        alert("Failed to send email: " + err);
-    });
-    console.log("Name:", params.name);
-    console.log("Email:", params.email);
+function SendMail() {
+  var params = {
+      name: document.getElementById("name").value.trim(),
+      email: document.getElementById("email").value.trim(),
+      phone: document.getElementById("phone").value.trim(),
+      location: document.getElementById("location").value.trim(),
+      message: document.getElementById("order").value.trim(),
+  };
 
+  if (!params.name || !params.email || !params.phone || !params.location || !params.message) {
+      Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Please fill all the details!',
+      });
+      return;
+  }
+
+  emailjs.send("service_nbdzv9n", "template_4rv15p1", params)
+  .then(function(res) {
+    Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Email sent successfully!',
+        confirmButtonText: 'OK'
+    }).then(() => {
+        location.reload(); // Reloads the page after clicking OK
+    });
+  })
+  .catch(function(err) {
+      Swal.fire({
+          icon: 'error',
+          title: 'Error!',
+          text: 'Failed to send email: ' + err,
+      });
+  });
 }
+
+
 
 // contact form
 const inputs = document.querySelectorAll(".input");

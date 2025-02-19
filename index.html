@@ -13,6 +13,10 @@
   <!-- Swipwer CSS Link -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- SweetAlert2 -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
 
 <body class="bg-LightGray">
@@ -126,9 +130,9 @@
       </div>
       <div class="carousel-inner">
         <!-- 1st slide -->
-        <div class="carousel-item py-5 md:py-20 active bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+        <div class="carousel-item py-5 md:py-20 active shadow-lg rounded-lg overflow-hidden">
           <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
-            <div class="carouselImage flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh">
+            <div class="carouselImage flex flex-col justify-content-center w-100 px-4 md:px-16 maxh">
               <img src="assets/Ps1.jpg" alt="Image 1" class="carousel-image" />
             </div>
             <div class="carousel-text">
@@ -142,9 +146,9 @@
         </div>
 
         <!-- 2nd slide -->
-        <div class="carousel-item py-5 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+        <div class="carousel-item py-5 md:py-20 shadow-lg rounded-lg overflow-hidden">
           <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
-            <div class="carouselImage flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh">
+            <div class="carouselImage flex-col justify-content-center w-100 px-4 md:px-16 maxh">
               <img src="assets/Ps2.jpg" alt="Image 2" class="carousel-image" />
             </div>
             <div class="carousel-text">
@@ -159,9 +163,9 @@
         </div>
 
         <!-- 3rd slide -->
-        <div class="carousel-item py-5 md:py-20 bg-slate-400 shadow-lg rounded-lg overflow-hidden">
+        <div class="carousel-item py-5 md:py-20 shadow-lg rounded-lg overflow-hidden">
           <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
-            <div class="carouselImage flex flex-col justify-content-center bg-slate-400 w-100 px-4 md:px-16 maxh">
+            <div class="carouselImage flex flex-col justify-content-center w-100 px-4 md:px-16 maxh">
               <img id="Ps3" src="assets/Ps3.jpg" alt="Image 3" class="carousel-image" />
             </div>
             <div class="carousel-text">
@@ -242,13 +246,13 @@
                     class="nav-link p-0 text-body-secondary">Near Amarpura Chauraha, Amarpura, Ramganjmandi, Kota</a>
                 </p>
                 <p><a href="https://maps.app.goo.gl/ah33MqUxmdzu6Uaz5" target="_blank"
-                  class="nav-link p-0 text-body-secondary">Opp of Association Building, Parsa Mata Chauraha, Kudayla,
-                  Ramganjmandi, Kota</a>
+                    class="nav-link p-0 text-body-secondary">Opp of Association Building, Parsa Mata Chauraha, Kudayla,
+                    Ramganjmandi, Kota</a>
                 </p>
               </div>
             </div>
             <div class="information">
-              <i class="icon fas fa-envelope"></i> 
+              <i class="icon fas fa-envelope"></i>
               <div class="mails">
                 <p>srmotors@ymail.com</p>
                 <p>shivanshmalpani@gmail.com</p>
@@ -288,106 +292,106 @@
             <h3 class="title pb-2">Contact us</h3>
             <div class="input-container">
               <input type="text" id="name" name="name" class="input" required />
-              <label for="name">Name</label>
-              <span>Name</span>
+              <label for="name">Name*</label>
+              <span>Name*</span>
             </div>
             <div class="input-container">
               <input type="email" id="email" name="email" class="input" required />
-              <label for="email">Email</label>
-              <span>Email</span>
+              <label for="email">Email*</label>
+              <span>Email*</span>
             </div>
             <div class="input-container">
               <input type="tel" id="phone" name="phone" class="input" required />
-              <label for="phone">Phone</label>
-              <span>Phone</span>
+              <label for="phone">Phone*</label>
+              <span>Phone*</span>
             </div>
             <div class="input-container">
               <input type="text" id="location" name="location" class="input" required />
-              <label for="location">Delivery Location</label>
-              <span>Delivery Location</span>
+              <label for="location">Delivery Location*</label>
+              <span>Delivery Location*</span>
             </div>
             <div class="input-container textarea">
               <textarea id="order" name="order" class="input" required></textarea>
-              <label for="order">Order Requirements</label>
-              <span>Order Requirements</span>
+              <label for="order">Order Requirements*</label>
+              <span>Order Requirements*</span>
             </div>
             <button type="button" class="btn1" onclick="SendMail()">Send</button>
           </form>
         </div>
 
 
-    <!-- Swiper Js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Swiper Js -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <!-- Bootstrap Js  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"></script>
+        <!-- Bootstrap Js  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
 
-    <!-- Smooth Scroll Script -->
-    <script>
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          e.preventDefault();
+        <!-- Smooth Scroll Script -->
+        <script>
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+            anchor.addEventListener("click", function (e) {
+              e.preventDefault();
 
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
+              document.querySelector(this.getAttribute("href")).scrollIntoView({
+                behavior: "smooth",
+              });
+            });
           });
-        });
-      });
 
-      // Hide Navmenu Script
-      let lastScrollTop = 0;
-      const navMenu = document.getElementById("navmenu");
+          // Hide Navmenu Script
+          let lastScrollTop = 0;
+          const navMenu = document.getElementById("navmenu");
 
-      window.addEventListener("scroll", function () {
-        let scrollTop =
-          window.pageYOffset || document.documentElement.scrollTop;
-        if (scrollTop > 200) {
-          if (scrollTop > lastScrollTop) {
-            navMenu.classList.add("navmenu-hide");
-          } else {
-            navMenu.classList.remove("navmenu-hide");
-          }
-        } else {
-          navMenu.classList.remove("navmenu-hide");
-        }
-        lastScrollTop = scrollTop;
-      });
+          window.addEventListener("scroll", function () {
+            let scrollTop =
+              window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollTop > 200) {
+              if (scrollTop > lastScrollTop) {
+                navMenu.classList.add("navmenu-hide");
+              } else {
+                navMenu.classList.remove("navmenu-hide");
+              }
+            } else {
+              navMenu.classList.remove("navmenu-hide");
+            }
+            lastScrollTop = scrollTop;
+          });
 
-      // Swiper
-      const swiper = new Swiper(".swiper", {
-        // Optional parameters
-        direction: "horizontal",
+          // Swiper
+          const swiper = new Swiper(".swiper", {
+            // Optional parameters
+            direction: "horizontal",
 
-        // Navigation arrows
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+            // Navigation arrows
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
 
-        slidesPerView: 1,
-        spaceBetween: 5,
-        loop: true,
-        slidesPerGroup: 1,
+            slidesPerView: 1,
+            spaceBetween: 5,
+            loop: true,
+            slidesPerGroup: 1,
 
-        autoplay: {
-          delay: 3000,
-        },
-      });
-    </script>
+            autoplay: {
+              delay: 3000,
+            },
+          });
+        </script>
 
-    <!-- Email.js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-      (function () {
-        emailjs.init({
-          publicKey: "gAUBqrgpKv5lx5L1i",
-        });
-      })();
-    </script>
-    <script typr="text/javascript" src="./script.js"></script>
+        <!-- Email.js -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+          (function () {
+            emailjs.init({
+              publicKey: "gAUBqrgpKv5lx5L1i",
+            });
+          })();
+        </script>
+        <script typr="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
