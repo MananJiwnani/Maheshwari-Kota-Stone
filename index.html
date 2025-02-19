@@ -284,40 +284,36 @@
         </div>
 
         <div class="contact-form">
-
-          <form action="index.html" autocomplete="off">
+          <form id="contactForm" autocomplete="off">
             <h3 class="title pb-2">Contact us</h3>
             <div class="input-container">
-              <input type="text" name="name" class="input" />
-              <label for="">Name</label>
+              <input type="text" id="name" name="name" class="input" required />
+              <label for="name">Name</label>
               <span>Name</span>
             </div>
             <div class="input-container">
-              <input type="email" name="email" class="input" />
-              <label for="">Email</label>
+              <input type="email" id="email" name="email" class="input" required />
+              <label for="email">Email</label>
               <span>Email</span>
             </div>
             <div class="input-container">
-              <input type="tel" name="phone" class="input" />
-              <label for="">Phone</label>
+              <input type="tel" id="phone" name="phone" class="input" required />
+              <label for="phone">Phone</label>
               <span>Phone</span>
             </div>
             <div class="input-container">
-              <input type="text" name="location" class="input" />
-              <label for="">Delivery Location</label>
+              <input type="text" id="location" name="location" class="input" required />
+              <label for="location">Delivery Location</label>
               <span>Delivery Location</span>
             </div>
             <div class="input-container textarea">
-              <textarea name="order" class="input"></textarea>
-              <label for="">Order Requirements</label>
+              <textarea id="order" name="order" class="input" required></textarea>
+              <label for="order">Order Requirements</label>
               <span>Order Requirements</span>
             </div>
-            <input type="submit" value="Send" class="btn1" />
+            <button type="button" class="btn1" onclick="SendMail()">Send</button>
           </form>
         </div>
-      </div>
-    </div>
-  </div>
 
 
     <!-- Swiper Js -->

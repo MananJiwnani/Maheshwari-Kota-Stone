@@ -1,10 +1,10 @@
 function SendMail(){
     var params = {
-        firstName: document.getElementById("firstname").value,
-        lastName: document.getElementById("lastname").value,
+        name: document.getElementById("name").value,
         email: document.getElementById("email").value,
         phone: document.getElementById("phone").value,
-        message: document.getElementById("message").value,
+        location: document.getElementById("location").value,
+        message: document.getElementById("order").value,
     }
     emailjs.send("service_nbdzv9n", "template_4rv15p1", params)
     .then(function(res){
@@ -13,7 +13,7 @@ function SendMail(){
     .catch(function(err) {
         alert("Failed to send email: " + err);
     });
-    console.log("First Name:", params.firstName);
+    console.log("Name:", params.name);
     console.log("Email:", params.email);
 
 }
